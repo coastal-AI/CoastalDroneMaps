@@ -27,6 +27,7 @@ jobs:
 
       - name: Run Python script
         run: |
+          conda init
           conda activate metadatamaps
           python drone_metadata_map.py
 
