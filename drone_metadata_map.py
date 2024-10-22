@@ -122,5 +122,5 @@ layout = column(
 )
 
 # Output to an HTML file and show the result
-output_file("interactive_map_with_cartolight_tiles_fv.html")
+output_file("index.html",title="Drone Metadata MAP")
 show(layout)
