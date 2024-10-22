@@ -29,6 +29,7 @@ jobs:
 
       - name: Run Python script
         run: |
+          mkdir output
           python drone_metadata_map.py
 
       - name: Deploy
