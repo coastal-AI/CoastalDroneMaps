@@ -1,5 +1,5 @@
-## Título del proyecto
+## Drone Metadata Map
 
-Descripción del proyecto modificado
+Collaborative effort to share shallow water and intertidal drone orthomosaics.
 
-Prueba
+
