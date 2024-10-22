@@ -27,7 +27,7 @@ jobs:
 
       - name: Run Python script
         run: |
-          conda info  # Check that Conda is properly set up
+          conda activate metadatamaps
           python drone_metadata_map.py
 
       - name: Deploy
