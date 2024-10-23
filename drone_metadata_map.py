@@ -93,7 +93,7 @@ centroids_source.selected.js_on_change('indices', callback)
 # Create combined main title and subtitle
 main_title = Div(text="""
     <div style='width: 100%; text-align: left;'>
-        <h1 style='font-size: 40px; margin-bottom: 5px;'>DRONE METADATA MAP</h1>
+        <h1 style='font-size: 40px; margin-bottom: 5px;'>COASTAL DRONE METADATA MAP</h1>
         <h3 style='font-size: 24px; margin-top: 0;'>Seagrass Ecology Group (IEO-CSIC)</h3>
         <p style='font-size: 16px;'>Dots represent aerial surveys. Polygons represent flight extent. Click centroids to display info and orthomosaic preview.</p>
         <br>
