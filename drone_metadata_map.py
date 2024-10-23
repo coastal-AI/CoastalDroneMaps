@@ -122,5 +122,5 @@ layout = column(
 )
 
 # Output to an HTML file and show the result
-output_file("output/index.html",title="Drone Metadata Map")
+output_file("index.html",title="Drone Metadata Map")
 show(layout)
