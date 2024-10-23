@@ -6,6 +6,7 @@ from bokeh.models import ColumnDataSource, CustomJS, Div, WheelZoomTool
 from bokeh.layouts import row, column
 from bokeh.models.tiles import WMTSTileSource
 from bokeh.plotting import figure
+from bokeh.layouts import Spacer
 
 # Load the data from the Excel file
 data = pd.read_excel('data/0METADATA_DRON.xlsx')
@@ -44,28 +45,30 @@ ys = [list(geom.exterior.coords.xy[1]) for geom in poly_gdf.geometry]
 polygons_source = ColumnDataSource(data={'xs': xs, 'ys': ys})
 
 # Display an empty initial information in Divs (details as rows)
-eventID_div = Div(text="<strong>Event ID: <strong>", width=600)
-eventDate_div = Div(text="<strong>Event Date: <strong>", width=600)
-drone_div = Div(text="<strong>Drone: <strong>", width=600)
-resolution_div = Div(text="<strong>Resolution (cm/px): <strong>", width=600)
-institution_div = Div(text="<strong>Institution: <strong>", width=600)
-contact_div = Div(text="<strong>Contact: <strong>", width=600)
-image_div = Div(text="<img src='' style='max-width: 100%; max-height: 600px; display: block;' />", width=600, height=600)  # Image moved to bottom
+eventID_div = Div(text="<strong>Event ID:</strong>", width_policy="max", sizing_mode="stretch_width")
+eventDate_div = Div(text="<strong>Event Date:</strong>", width_policy="max", sizing_mode="stretch_width")
+drone_div = Div(text="<strong>Drone:</strong>", width_policy="max", sizing_mode="stretch_width")
+resolution_div = Div(text="<strong>Resolution (cm/px):</strong>", width_policy="max", sizing_mode="stretch_width")
+institution_div = Div(text="<strong>Institution:</strong>", width_policy="max", sizing_mode="stretch_width")
+contact_div = Div(text="<strong>Contact:</strong>", width_policy="max", sizing_mode="stretch_width")
+image_div = Div(text="<img src='' style='max-width: 100%; height: auto; display: block;' />", width_policy="max", sizing_mode="stretch_both")
 
 # Create the map plot with CartoLight tiles
 tile_url = 'https://cartodb-basemaps-a.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png'
 tile_source = WMTSTileSource(url=tile_url)
 
 
+
+# Create the map plot with responsive sizing
 map_figure = figure(
     x_axis_type="mercator",
     y_axis_type="mercator",
     tools="tap, wheel_zoom, pan, reset",
-    width=700, height=700
-)
+    width=700,  # Set initial width
+    height=700,  # Set initial height
+    sizing_mode="stretch_both")  # Ensure map is responsive
 map_figure.add_tile(tile_source)
 
-# Add points and polygons to the map
 map_figure.scatter('x', 'y', size=10, source=centroids_source, color='blue', alpha=0.6)
 map_figure.patches('xs', 'ys', source=polygons_source, fill_alpha=0.2, line_width=2, fill_color="green")
 
@@ -93,34 +96,43 @@ centroids_source.selected.js_on_change('indices', callback)
 # Create combined main title and subtitle
 main_title = Div(text="""
     <div style='width: 100%; text-align: left;'>
-        <h1 style='font-size: 40px; margin-bottom: 5px;'>COASTAL DRONE METADATA MAP</h1>
-        <h3 style='font-size: 24px; margin-top: 0;'>Seagrass Ecology Group (IEO-CSIC)</h3>
-        <p style='font-size: 16px;'>Dots represent aerial surveys. Polygons represent flight extent. Click centroids to display info and orthomosaic preview.</p>
+        <h1 style='font-size: 2vw; margin-bottom: 5px;'>COASTAL DRONE METADATA MAP</h1>
+        <h3 style='font-size: 1.5vw; margin-top: 0;'>Seagrass Ecology Group (IEO-CSIC)</h3>
+        <p style='font-size: 1vw;'>Dots represent aerial surveys. Polygons represent flight extent. Click centroids to display info and orthomosaic preview.</p>
         <br>
-        <p style='font-size: 16px;'>For more info or download links please get in touch.</p>
+        <p style='font-size: 1vw;'>For more info or download links please get in touch.</p>
         <br>
-        <p style='font-size: 12px;'>License <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a> - Updated 22/10/2024</p>
+        <p style='font-size: 0.75vw;'>License <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a> - Updated 22/10/2024</p>
         <br>
     </div>
-""", width=1200)
+""", width_policy="max", sizing_mode="stretch_width")
 
-# Arrange the layout with the map and the inverted table (details as rows, image at the bottom)
+# Add Spacers to make sure Divs are spaced well
 layout = column(
     main_title,
     row(
         map_figure,
         column(
             eventID_div,
+            Spacer(height=10),  # Add spacing between divs
             eventDate_div,
+            Spacer(height=10),
             drone_div,
+            Spacer(height=10),
             resolution_div,
+            Spacer(height=10),
             institution_div,
+            Spacer(height=10),
             contact_div,
-            image_div  # Image at the bottom
-        )
-    )
+            Spacer(height=10),
+            image_div,
+            width_policy="max", sizing_mode="stretch_width"
+        ),
+        sizing_mode="stretch_both"
+    ),
+    sizing_mode="stretch_both"
 )
 
 # Output to an HTML file and show the result
-output_file("output/index.html",title="Coastal Drone Metadata Map")
+output_file("output/index.html", title="Coastal Drone Metadata Map")
 show(layout)
