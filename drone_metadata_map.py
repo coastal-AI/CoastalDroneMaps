@@ -11,6 +11,17 @@ from bokeh.layouts import Spacer
 # Load the data from the Excel file
 data = pd.read_excel('data/0METADATA_DRON.xlsx')
 
+#Load images from pCloud
+# public folder:
+associatedMedia_url = 'https://filedn.eu/lxdSetOgU6G8FNMH4dxBDJQ/coastalDroneMetadataMap/'
+# private folder:
+#associatedMedia_url = 'https://e.pcloud.link/publink/show?code=kZyYOCZBEmCsBh4LguVzTwvSswVMjj5KgV7' 
+# private folder not working, it needs to be accessed trough API and credentials would need to be in the code, not a solution
+
+#Generate associatedMedia column
+data['associatedMedia'] = associatedMedia_url + data['eventID'].astype(str) + '_image.jpg'
+print(data['associatedMedia'])
+
 # Ensure necessary columns exist
 required_columns = ['decimalLongitude', 'decimalLatitude', 'footprintWKT', 'associatedMedia', 'eventID', 'eventDate', 'DRONE', 'GSD (cm/px)', 'INSTITUTION', 'CONTACT']
 if not all(col in data for col in required_columns):
