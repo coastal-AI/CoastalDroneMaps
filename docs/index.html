@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <link rel="stylesheet" href="style.css"/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="data/0METADATA_DRON.js"></script> <!-- External JS with data -->
 </head>
 <body>
     <header>
@@ -18,8 +20,7 @@
         <p>Poner toda la info que se quiera aquí</p>
     </div>
         
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-    <script src="data/0METADATA_DRON.js"></script> <!-- External JS with data -->
+    
     <script>
         // Initialize map
         var map = L.map('map').setView([43.75, -5.23], 5); // Change to your desired coordinates
@@ -29,8 +30,9 @@
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);
 
-        function showMarkerInfo(item, latlng) {
+        function showMarkerInfo(item) {
         // Create content for the popup
+            latlng = [item.latitude, item.longitude];
             var popupContent = `
             <div class="popup-content">
                 <h3>${item.eventID}</h3>
@@ -61,7 +63,7 @@
             var marker = L.marker([item.latitude, item.longitude]).addTo(map);
             markers.push(marker);
             marker.on('click', function(){ 
-                showMarkerInfo(item, marker.getLatLng())
+                showMarkerInfo(item)
             });
         });
 
@@ -69,7 +71,7 @@
         data.forEach(function(item) {
             var polygon = L.polygon(item.footprint, {color: 'green', fillOpacity: 0.2}).addTo(map);
             polygon.on('click', function(){ 
-                showMarkerInfo(item, marker.getLatLng())
+                showMarkerInfo(item)
             });
         });
 
