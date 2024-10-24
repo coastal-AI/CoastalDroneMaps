@@ -108,12 +108,12 @@ centroids_source.selected.js_on_change('indices', callback)
 main_title = Div(text="""
     <div style='width: 100%; text-align: left;'>
         <h1 style='font-size: 2vw; margin-bottom: 5px;'>COASTAL DRONE METADATA MAP</h1>
-        <h3 style='font-size: 1.5vw; margin-top: 0;'>Seagrass Ecology Group (IEO-CSIC)</h3>
-        <p style='font-size: 1vw;'>Dots represent aerial surveys. Polygons represent flight extent. Click centroids to display info and orthomosaic preview.</p>
+        <h3 style='font-size: 1vw; margin-top: 0;'>Collaborative effort to make coastal drone othomosaics available </h3>
+        <p style='font-size: 0.75vw;'>Dots represent aerial surveys. Polygons represent flight extent. Click centroids to display info and orthomosaic preview.</p>
         <br>
-        <p style='font-size: 1vw;'>For more info or download links please get in touch.</p>
+        <p style='font-size: 0.75vw;'>For more info or download links please email contact person.</p>
         <br>
-        <p style='font-size: 0.75vw;'>License <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a> - Updated 22/10/2024</p>
+        <p style='font-size: 0.5vw;'>License <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a> - Updated 22/10/2024</p>
         <br>
     </div>
 """, width_policy="max", sizing_mode="stretch_width")
