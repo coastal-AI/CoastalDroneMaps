@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coastal Drone Metadata Map</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header>
+        <img src="assets/header.jpg" alt="Header Image" />
+        <div class="header-text">Coastal Drone Metadata Map (IEO-CSIC)</div>
+    </header>
+
+    <div id="map"></div>
+    <div id="info">
+        <p>Poner toda la info que se quiera aquí</p>
+    </div>
+        
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="data/0METADATA_DRON.js"></script> <!-- External JS with data -->
+    <script>
+        // Initialize map
+        var map = L.map('map').setView([43.75, -5.23], 5); // Change to your desired coordinates
+
+        // Add tile layer from Carto
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        function showMarkerInfo(item, latlng) {
+        // Create content for the popup
+            var popupContent = `
+            <div class="popup-content">
+                <h3>${item.eventID}</h3>
+                <div class="popup-info-container">
+                    <div class="popup-info">
+                        <p><strong>Event Date:</strong> ${item.eventDate}</p>
+                        <p><strong>Drone:</strong> ${item.drone}</p>
+                        <p><strong>Resolution (cm/px):</strong> ${item.resolution}</p>
+                        <p><strong>Institution:</strong> ${item.institution}</p>
+                        <p><strong>Contact:</strong> ${item.contact}</p>
+                    </div>
+                    <img src="${item.associatedMedia}" class="popup-image" />
+                </div>
+            </div>
+            `;
+            
+            // Create and open the popup
+            L.popup()
+                .setLatLng(latlng)
+                .setContent(popupContent)
+                .openOn(map);
+        };
+        
+
+        // Add markers and store them in an array
+        var markers = [];
+        data.forEach(function(item) {
+            var marker = L.marker([item.latitude, item.longitude]).addTo(map);
+            markers.push(marker);
+            marker.on('click', function(){ 
+                showMarkerInfo(item, marker.getLatLng())
+            });
+        });
+
+        // Add polygons and make them clickable
+        data.forEach(function(item) {
+            var polygon = L.polygon(item.footprint, {color: 'green', fillOpacity: 0.2}).addTo(map);
+            polygon.on('click', function(){ 
+                showMarkerInfo(item, marker.getLatLng())
+            });
+        });
+
+        // Hide markers on zoom
+        map.on('zoomend', function() {
+            if (map.getZoom() > 15) { // Change 15 to your desired zoom level threshold
+                markers.forEach(function(marker) {
+                    map.removeLayer(marker);
+                });
+            } else {
+                markers.forEach(function(marker) {
+                    marker.addTo(map);
+                });
+            }
+        });
+    </script>
+    </body>
+</html>

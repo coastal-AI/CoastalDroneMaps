@@ -1,0 +1,77 @@
+header {
+    width: 100%;
+}
+header img {
+    width: 100%; /* Makes the image full width */
+    max-height: 150px; /* Limits the height to 100px */
+    height: auto; /* Keeps the aspect ratio */
+    object-fit: cover; 
+}
+
+.header-text {
+    position: absolute; /* Absolutely position the text */
+    top: 80px; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position to truly center */
+    color: white; /* Text color */
+    font-size: 24px; /* Adjust font size as needed */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Add a shadow for better visibility */
+    text-align: center; /* Center text */
+}
+
+.info img {
+    max-height: 40%; /* Subtract the height of header and other elements */
+    width: auto; /* Keep the width auto to maintain aspect ratio */
+    height: auto; /* Keep the height auto to maintain aspect ratio */
+}
+
+.leaflet-popup-content {
+    width: 600px !important; /* Set your desired width */
+    max-width: 100%; /* Ensure it doesn't exceed the viewport */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.popup-content {
+    display: flex;
+    flex-direction: column; /* Stack h3 and info vertically */
+    padding: 10px; /* Add some padding */
+    border: 1px solid #ccc; /* Optional: Add a border */
+    border-radius: 5px; /* Optional: Round the corners */
+    background-color: #fff; /* Optional: Background color */
+}
+
+.popup-info-container {
+    display: flex; /* Use Flexbox for info and image */
+    justify-content: space-between; /* Space between info and image */
+    align-items: flex-start; /* Align items to the top */
+    margin-top: 10px; /* Space between title and container */
+}
+
+.popup-info {
+    display: flex; /* Use Flexbox for the info section */
+    flex-direction: column; /* Stack info items vertically */
+}
+
+.popup-image {
+    max-width: 200px; /* Set a max width for the image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Optional: Add some margin to the h3 for spacing */
+.popup-content h3 {
+    margin-bottom: 10px; /* Space between title and info */
+}
+
+
+#map {
+    width: 100%;
+    height: 700px;
+}
+.info {
+    width: 30%;
+    padding: 10px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
