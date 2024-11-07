@@ -12,13 +12,21 @@
 <body>
     <header>
         <img src="assets/header.jpg" alt="Header Image" />
-        <div class="header-text">Coastal Drone Metadata Map (IEO-CSIC)</div>
+        <div class="header-text">Coastal Drone Metadata Map</div>
     </header>
 
     <div id="map"></div>
-    <div id="info">
-        <p>Poner toda la info que se quiera aquí</p>
-    </div>
+   
+    <!-- Footer section -->
+    <footer>
+        <img src="assets/header.jpg" alt="Footer Image" />
+        <div class="logos">
+            <img src="assets/logoUNIOVI.png" alt="Logo 1" class="logo">
+            <img src="assets/logoIEO.png" alt="Logo 2" class="logo">
+            <img src="assets/logoCEAB.png" alt="Logo 3" class="logo">
+            <img src="assets/logoCSIC.png" alt="Logo 4" class="logo">
+        </div>
+    </footer>
         
     
     <script>
@@ -56,37 +64,30 @@
                 .openOn(map);
         };
         
+    
+        // Add polygons
+        data.forEach(function(item) {
+            var polygon = L.polygon(item.footprint, {color: 'blue', fillOpacity: 0.1}).addTo(map);
+            });
 
         // Add markers and store them in an array
         var markers = [];
         data.forEach(function(item) {
-            var marker = L.marker([item.latitude, item.longitude]).addTo(map);
+            var marker = L.circleMarker([item.latitude, item.longitude], {
+            radius: 3, // Adjust the radius as needed
+            color: 'white', // Adjust the color as needed
+            fillColor: 'blue', // Adjust the fill color to light blue
+            fillOpacity: 0.5 // Adjust the fill opacity as needed
+            }).addTo(map);
             markers.push(marker);
             marker.on('click', function(){ 
-                showMarkerInfo(item)
+            showMarkerInfo(item)
             });
         });
+   
 
-        // Add polygons and make them clickable
-        data.forEach(function(item) {
-            var polygon = L.polygon(item.footprint, {color: 'green', fillOpacity: 0.2}).addTo(map);
-            polygon.on('click', function(){ 
-                showMarkerInfo(item)
-            });
-        });
-
-        // Hide markers on zoom
-        map.on('zoomend', function() {
-            if (map.getZoom() > 15) { // Change 15 to your desired zoom level threshold
-                markers.forEach(function(marker) {
-                    map.removeLayer(marker);
-                });
-            } else {
-                markers.forEach(function(marker) {
-                    marker.addTo(map);
-                });
-            }
-        });
+    
+        
     </script>
     </body>
 </html>

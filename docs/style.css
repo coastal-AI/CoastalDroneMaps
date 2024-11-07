@@ -1,22 +1,28 @@
 header {
     width: 100%;
+    margin-bottom: 5px;
+    overflow: hidden;
 }
 header img {
     width: 100%; /* Makes the image full width */
-    max-height: 150px; /* Limits the height to 100px */
+    max-height: 120px; /* Limits the height to 100px */
     height: auto; /* Keeps the aspect ratio */
     object-fit: cover; 
+    object-position: top;
 }
 
 .header-text {
     position: absolute; /* Absolutely position the text */
-    top: 80px; /* Center vertically */
+    top: 70px; /* Center vertically */
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Adjust position to truly center */
     color: white; /* Text color */
-    font-size: 24px; /* Adjust font size as needed */
+    font-size: 40px; /* Adjust font size as needed */
+    font-family: 'Arial', sans-serif; /* Change font type */
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Add a shadow for better visibility */
     text-align: center; /* Center text */
+    text-transform: uppercase; /* Make text appear in capital letters */
+    font-weight: bold; /* Make text bold */
 }
 
 .info img {
@@ -59,13 +65,14 @@ header img {
 
 /* Optional: Add some margin to the h3 for spacing */
 .popup-content h3 {
-    margin-bottom: 10px; /* Space between title and info */
+    margin-bottom: 5px; /* Space between title and info */
 }
 
 
 #map {
     width: 100%;
-    height: 700px;
+    height: calc(100vh - 250px);
+    margin-bottom: 10px;
 }
 .info {
     width: 30%;
@@ -74,4 +81,36 @@ header img {
 img {
     max-width: 100%;
     height: auto;
+}
+
+footer {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 5px; /* Add space above footer */
+}
+
+footer img {
+    width: 100%; /* Makes the image full width */
+    max-height: 80px; /* Limits the height */
+    height: auto; /* Keeps the aspect ratio */
+    object-fit: cover; /* Ensures the image covers the entire area without distortion */
+    object-position: bottom;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 10px; /* Position logos at the bottom of the footer */
+    width: 100%; 
+    z-index: 2; /* Ensure logos appear on top of the background image */
+}
+
+.logo {
+    max-height: 40px;
+    height: auto;
+    width: auto;
 }
