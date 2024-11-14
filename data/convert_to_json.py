@@ -23,8 +23,8 @@ data_filtered.rename(columns={
 }, inplace=True)
 
 # Generate the associatedMedia URL
-associatedMedia_url = 'https://filedn.eu/lxdSetOgU6G8FNMH4dxBDJQ/coastalDroneMetadataMap/'
-data_filtered['associatedMedia'] = associatedMedia_url + data_filtered['eventID'].astype(str) + '_image.jpg'
+#associatedMedia_url = 'https://filedn.eu/lxdSetOgU6G8FNMH4dxBDJQ/coastalDroneMetadataMap/'
+#data_filtered['associatedMedia'] = associatedMedia_url + data_filtered['eventID'].astype(str) + '_image.jpg'
 
 # Convert footprintWKT to list of coordinate pairs for polygons (Leaflet expects [latitude, longitude])
 def convert_wkt_to_coordinates(wkt_str):

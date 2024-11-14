@@ -8,7 +8,6 @@ var data = [
         "contact": "f.garcia@ieo.csic.es",
         "latitude": 42.242961229387,
         "longitude": 3.22733954379002,
-        "associatedMedia": "https://filedn.eu/lxdSetOgU6G8FNMH4dxBDJQ/coastalDroneMetadataMap/20230925_0907_CATGRASS_RUSTELLA_image.jpg",
         "footprint": [
             [
                 42.244891287469,
@@ -41,7 +40,6 @@ var data = [
         "contact": "f.garcia@ieo.csic.es",
         "latitude": 42.2494271184571,
         "longitude": 3.22945631242333,
-        "associatedMedia": "https://filedn.eu/lxdSetOgU6G8FNMH4dxBDJQ/coastalDroneMetadataMap/20230925_0951_CATGRASS_MONTJOI_image.jpg",
         "footprint": [
             [
                 42.252491761185134,
@@ -74,7 +72,6 @@ var data = [
         "contact": "f.garcia@ieo.csic.es",
         "latitude": 42.2497648460314,
         "longitude": 3.24047399672674,
-        "associatedMedia": "https://filedn.eu/lxdSetOgU6G8FNMH4dxBDJQ/coastalDroneMetadataMap/20230925_1100_CATGRASS_PELOSA_image.jpg",
         "footprint": [
             [
                 42.25119347924394,
@@ -107,7 +104,6 @@ var data = [
         "contact": "f.garcia@ieo.csic.es",
         "latitude": 42.3165079111184,
         "longitude": 3.31267747836694,
-        "associatedMedia": "https://filedn.eu/lxdSetOgU6G8FNMH4dxBDJQ/coastalDroneMetadataMap/20230925_1412_CATGRASS_JUGADORA_image.jpg",
         "footprint": [
             [
                 42.31827884442748,
@@ -140,7 +136,6 @@ var data = [
         "contact": "f.garcia@ieo.csic.es",
         "latitude": 43.458248264864,
         "longitude": -5.06383736860948,
-        "associatedMedia": "https://filedn.eu/lxdSetOgU6G8FNMH4dxBDJQ/coastalDroneMetadataMap/20240124_0912_RIBADESELLA_image.jpg",
         "footprint": [
             [
                 43.46337398396899,
@@ -173,7 +168,6 @@ var data = [
         "contact": "f.garcia@ieo.csic.es",
         "latitude": 43.3846627273106,
         "longitude": -4.51231722981792,
-        "associatedMedia": "https://filedn.eu/lxdSetOgU6G8FNMH4dxBDJQ/coastalDroneMetadataMap/20240124_1214_TINA_MAYOR_image.jpg",
         "footprint": [
             [
                 43.386457586185635,
@@ -206,7 +200,6 @@ var data = [
         "contact": "f.garcia@ieo.csic.es",
         "latitude": 43.5130937126548,
         "longitude": -5.38439117246366,
-        "associatedMedia": "https://filedn.eu/lxdSetOgU6G8FNMH4dxBDJQ/coastalDroneMetadataMap/20240212_1124_VILLAVICIOSA_ENCIENONA_image.jpg",
         "footprint": [
             [
                 43.51489176081837,
@@ -239,7 +232,6 @@ var data = [
         "contact": "f.garcia@ieo.csic.es",
         "latitude": 43.524783315238,
         "longitude": -5.38128701718255,
-        "associatedMedia": "https://filedn.eu/lxdSetOgU6G8FNMH4dxBDJQ/coastalDroneMetadataMap/20240212_1240_VILLAVICIOSA_MISIEGO_image.jpg",
         "footprint": [
             [
                 43.526949294962506,
@@ -272,7 +264,6 @@ var data = [
         "contact": "f.garcia@ieo.csic.es",
         "latitude": 43.4337370099002,
         "longitude": -4.8345613211631,
-        "associatedMedia": "https://filedn.eu/lxdSetOgU6G8FNMH4dxBDJQ/coastalDroneMetadataMap/20240216_1406_NIEMBRO1_image.jpg",
         "footprint": [
             [
                 43.4351406023846,
@@ -305,7 +296,6 @@ var data = [
         "contact": "f.garcia@ieo.csic.es",
         "latitude": 43.4341732027333,
         "longitude": -4.83293916763588,
-        "associatedMedia": "https://filedn.eu/lxdSetOgU6G8FNMH4dxBDJQ/coastalDroneMetadataMap/20240216_1432_NIEMBRO_ZOOM_image.jpg",
         "footprint": [
             [
                 43.43444065383422,
@@ -338,7 +328,6 @@ var data = [
         "contact": "f.garcia@ieo.csic.es",
         "latitude": 43.3960530012932,
         "longitude": -4.61173412272068,
-        "associatedMedia": "https://filedn.eu/lxdSetOgU6G8FNMH4dxBDJQ/coastalDroneMetadataMap/20240216_1540_COBIJERO_image.jpg",
         "footprint": [
             [
                 43.39670711388225,
@@ -371,7 +360,6 @@ var data = [
         "contact": "f.garcia@ieo.csic.es",
         "latitude": 43.4349931188177,
         "longitude": -4.83539685675678,
-        "associatedMedia": "https://filedn.eu/lxdSetOgU6G8FNMH4dxBDJQ/coastalDroneMetadataMap/20240216_1636_NIEMBRO2_image.jpg",
         "footprint": [
             [
                 43.435961572045294,
@@ -404,7 +392,6 @@ var data = [
         "contact": "f.garcia@ieo.csic.es",
         "latitude": 43.5232703798646,
         "longitude": -5.38403091695181,
-        "associatedMedia": "https://filedn.eu/lxdSetOgU6G8FNMH4dxBDJQ/coastalDroneMetadataMap/20240315_1233_VILLAVICIOSA_BORNIZAL_image.jpg",
         "footprint": [
             [
                 43.52460292723967,
@@ -437,7 +424,6 @@ var data = [
         "contact": "f.garcia@ieo.csic.es",
         "latitude": 43.5194007524181,
         "longitude": -5.3857666357549,
-        "associatedMedia": "https://filedn.eu/lxdSetOgU6G8FNMH4dxBDJQ/coastalDroneMetadataMap/20240405_1016_VILLAVICIOSA_BORNIZAL2_image.jpg",
         "footprint": [
             [
                 43.52286479858917,
@@ -470,7 +456,6 @@ var data = [
         "contact": "f.garcia@ieo.csic.es",
         "latitude": 43.5037174438576,
         "longitude": -5.42287743920885,
-        "associatedMedia": "https://filedn.eu/lxdSetOgU6G8FNMH4dxBDJQ/coastalDroneMetadataMap/20240410_1124_VILLAVICIOSA_IZQ1_image.jpg",
         "footprint": [
             [
                 43.50832872200161,
@@ -503,7 +488,6 @@ var data = [
         "contact": "f.garcia@ieo.csic.es",
         "latitude": 43.5148914025492,
         "longitude": -5.39138692771449,
-        "associatedMedia": "https://filedn.eu/lxdSetOgU6G8FNMH4dxBDJQ/coastalDroneMetadataMap/20240411_1246_VILLAVICIOSA_BORNIZAL3_image.jpg",
         "footprint": [
             [
                 43.518227044288764,
@@ -536,7 +520,6 @@ var data = [
         "contact": "f.garcia@ieo.csic.es",
         "latitude": 43.5093615173382,
         "longitude": -5.40485579427833,
-        "associatedMedia": "https://filedn.eu/lxdSetOgU6G8FNMH4dxBDJQ/coastalDroneMetadataMap/20240411_1332_VILLAVICIOSA_MOLINO1_image.jpg",
         "footprint": [
             [
                 43.512181639258245,
@@ -569,7 +552,6 @@ var data = [
         "contact": "f.garcia@ieo.csic.es",
         "latitude": 43.5065809334354,
         "longitude": -5.4162426144646,
-        "associatedMedia": "https://filedn.eu/lxdSetOgU6G8FNMH4dxBDJQ/coastalDroneMetadataMap/20240411_1408_VILLAVICIOSA_MOLINO2_image.jpg",
         "footprint": [
             [
                 43.510857458723486,
@@ -602,7 +584,6 @@ var data = [
         "contact": "f.garcia@ieo.csic.es",
         "latitude": 43.5143490299469,
         "longitude": -5.4049936421013,
-        "associatedMedia": "https://filedn.eu/lxdSetOgU6G8FNMH4dxBDJQ/coastalDroneMetadataMap/20240412_1304_VILLAVICIOSA_IZQ2_image.jpg",
         "footprint": [
             [
                 43.518884727683485,
@@ -635,7 +616,6 @@ var data = [
         "contact": "f.garcia@ieo.csic.es",
         "latitude": 43.5214916289308,
         "longitude": -5.39466475054331,
-        "associatedMedia": "https://filedn.eu/lxdSetOgU6G8FNMH4dxBDJQ/coastalDroneMetadataMap/20240412_1418_VILLAVICIOSA_IZQ3_image.jpg",
         "footprint": [
             [
                 43.52675714243936,
@@ -668,7 +648,6 @@ var data = [
         "contact": "f.garcia@ieo.csic.es",
         "latitude": 43.532895054013,
         "longitude": -5.38848964872319,
-        "associatedMedia": "https://filedn.eu/lxdSetOgU6G8FNMH4dxBDJQ/coastalDroneMetadataMap/20240412_1507_VILLAVICIOSA_IZQ4_image.jpg",
         "footprint": [
             [
                 43.53679134639706,
@@ -701,7 +680,6 @@ var data = [
         "contact": "f.garcia@ieo.csic.es",
         "latitude": 43.5125207646987,
         "longitude": -5.40093724188165,
-        "associatedMedia": "https://filedn.eu/lxdSetOgU6G8FNMH4dxBDJQ/coastalDroneMetadataMap/20240507_0946_VILLAVICIOSA_DCHA_REMATE1_image.jpg",
         "footprint": [
             [
                 43.51412885739475,
@@ -734,7 +712,6 @@ var data = [
         "contact": "f.garcia@ieo.csic.es",
         "latitude": 43.5181474396753,
         "longitude": -5.38257434263555,
-        "associatedMedia": "https://filedn.eu/lxdSetOgU6G8FNMH4dxBDJQ/coastalDroneMetadataMap/20240507_1029_VILLAVICIOSA_DCHA_REMATE3_image.jpg",
         "footprint": [
             [
                 43.520156755695325,
@@ -767,7 +744,6 @@ var data = [
         "contact": "f.garcia@ieo.csic.es",
         "latitude": 43.5222821701613,
         "longitude": -5.38681130294329,
-        "associatedMedia": "https://filedn.eu/lxdSetOgU6G8FNMH4dxBDJQ/coastalDroneMetadataMap/20240507_1054_VILLAVICIOSA_DCHA_REMATE2_image.jpg",
         "footprint": [
             [
                 43.52751325474389,
@@ -800,7 +776,6 @@ var data = [
         "contact": "f.garcia@ieo.csic.es",
         "latitude": 43.4112167844766,
         "longitude": -3.45635504550257,
-        "associatedMedia": "https://filedn.eu/lxdSetOgU6G8FNMH4dxBDJQ/coastalDroneMetadataMap/20240516_0758_NORGRASS_SANTON\u0303A_REGATON_image.jpg",
         "footprint": [
             [
                 43.415679670138694,
@@ -833,7 +808,6 @@ var data = [
         "contact": "f.garcia@ieo.csic.es",
         "latitude": 43.4382017013049,
         "longitude": -3.47094471704174,
-        "associatedMedia": "https://filedn.eu/lxdSetOgU6G8FNMH4dxBDJQ/coastalDroneMetadataMap/20240516_1719_NORGRASS_SANTON\u0303A_ARENILLA_1ZOSREF_image.jpg",
         "footprint": [
             [
                 43.43878711100292,
@@ -866,7 +840,6 @@ var data = [
         "contact": "f.garcia@ieo.csic.es",
         "latitude": 43.4377986884299,
         "longitude": -3.4674037124084,
-        "associatedMedia": "https://filedn.eu/lxdSetOgU6G8FNMH4dxBDJQ/coastalDroneMetadataMap/20240516_1815_NORGRASS_SANTON\u0303A_ARENILLA_2NANOREF_image.jpg",
         "footprint": [
             [
                 43.43847645911682,
@@ -899,7 +872,6 @@ var data = [
         "contact": "f.garcia@ieo.csic.es",
         "latitude": 43.4208757398766,
         "longitude": -3.47828529185673,
-        "associatedMedia": "https://filedn.eu/lxdSetOgU6G8FNMH4dxBDJQ/coastalDroneMetadataMap/20240517_0900_NORGRASS_SANTON\u0303A_SOLLAGUA_3NANOREF_image.jpg",
         "footprint": [
             [
                 43.422105381520865,
@@ -932,7 +904,6 @@ var data = [
         "contact": "f.garcia@ieo.csic.es",
         "latitude": 43.4063670868357,
         "longitude": -3.45849058471019,
-        "associatedMedia": "https://filedn.eu/lxdSetOgU6G8FNMH4dxBDJQ/coastalDroneMetadataMap/20240518_0907_NORGRASS_SANTON\u0303A_REGATON_4NANOPRES_image.jpg",
         "footprint": [
             [
                 43.4169587551926,
@@ -965,7 +936,6 @@ var data = [
         "contact": "f.garcia@ieo.csic.es",
         "latitude": 43.5161988822994,
         "longitude": -5.39795107798888,
-        "associatedMedia": "https://filedn.eu/lxdSetOgU6G8FNMH4dxBDJQ/coastalDroneMetadataMap/20240520_1045_NORGRASS_VILLAVICIOSA_ALBATROS_5NANOREF_image.jpg",
         "footprint": [
             [
                 43.51756369503251,
@@ -998,7 +968,6 @@ var data = [
         "contact": "f.garcia@ieo.csic.es",
         "latitude": 43.5257753323138,
         "longitude": -7.01867225193532,
-        "associatedMedia": "https://filedn.eu/lxdSetOgU6G8FNMH4dxBDJQ/coastalDroneMetadataMap/20240523_1125_NORGRASS_EO_LINIERA_6NANOREF12m_image.jpg",
         "footprint": [
             [
                 43.52652767075552,
@@ -1031,7 +1000,6 @@ var data = [
         "contact": "f.garcia@ieo.csic.es",
         "latitude": 43.5275346697475,
         "longitude": -7.01930267716071,
-        "associatedMedia": "https://filedn.eu/lxdSetOgU6G8FNMH4dxBDJQ/coastalDroneMetadataMap/20240523_1149_NORGRASS_EO_LINIERA_6NANOREF120m_image.jpg",
         "footprint": [
             [
                 43.530386587510044,
@@ -1064,7 +1032,6 @@ var data = [
         "contact": "f.garcia@ieo.csic.es",
         "latitude": 43.7116716809352,
         "longitude": -7.86653035563876,
-        "associatedMedia": "https://filedn.eu/lxdSetOgU6G8FNMH4dxBDJQ/coastalDroneMetadataMap/20240525_1116_NORGRASS_ORTIGUEIRA_FIGUEIROA_7NANO20m_image.jpg",
         "footprint": [
             [
                 43.712988002217365,
@@ -1097,7 +1064,6 @@ var data = [
         "contact": "f.garcia@ieo.csic.es",
         "latitude": 43.7125989467075,
         "longitude": -7.8672858569733,
-        "associatedMedia": "https://filedn.eu/lxdSetOgU6G8FNMH4dxBDJQ/coastalDroneMetadataMap/20240525_1143_NORGRASS_ORTIGUEIRA_FIGUEIROA_7NANO120m_image.jpg",
         "footprint": [
             [
                 43.71569044966523,
@@ -1130,7 +1096,6 @@ var data = [
         "contact": "f.garcia@ieo.csic.es",
         "latitude": 43.7040056429363,
         "longitude": -7.87525949561759,
-        "associatedMedia": "https://filedn.eu/lxdSetOgU6G8FNMH4dxBDJQ/coastalDroneMetadataMap/20240526_1036_NORGRASS_ORTIGUEIRA_SISMUNDI_8ZOSREF12m_image.jpg",
         "footprint": [
             [
                 43.70516933355983,
@@ -1163,7 +1128,6 @@ var data = [
         "contact": "f.garcia@ieo.csic.es",
         "latitude": 43.6984297866183,
         "longitude": -7.87692433585268,
-        "associatedMedia": "https://filedn.eu/lxdSetOgU6G8FNMH4dxBDJQ/coastalDroneMetadataMap/20240526_1142_NORGRASS_ORTIGUEIRA_SISMUNDI_8ZOSREF120m_image.jpg",
         "footprint": [
             [
                 43.70592976326598,
@@ -1196,7 +1160,6 @@ var data = [
         "contact": "f.garcia@ieo.csic.es",
         "latitude": 43.7134587980675,
         "longitude": -7.69741869415878,
-        "associatedMedia": "https://filedn.eu/lxdSetOgU6G8FNMH4dxBDJQ/coastalDroneMetadataMap/20240526_1255_NORGRASS_BARQUEIRO_CREIXIMIL_9NANOREF12m_image.jpg",
         "footprint": [
             [
                 43.714361212815476,
@@ -1229,7 +1192,6 @@ var data = [
         "contact": "f.garcia@ieo.csic.es",
         "latitude": 43.7119098958683,
         "longitude": -7.69630906408618,
-        "associatedMedia": "https://filedn.eu/lxdSetOgU6G8FNMH4dxBDJQ/coastalDroneMetadataMap/20240526_1329_NORGRASS_BARQUEIRO_CREIXIMIL_9NANOREF100m_image.jpg",
         "footprint": [
             [
                 43.71521360575043,
@@ -1262,7 +1224,6 @@ var data = [
         "contact": "f.garcia@ieo.csic.es",
         "latitude": 43.7356165997063,
         "longitude": -7.67622604734867,
-        "associatedMedia": "https://filedn.eu/lxdSetOgU6G8FNMH4dxBDJQ/coastalDroneMetadataMap/20240527_1450_NORGRASS_BARQUEIRO_PUERTOVICEDO_12NANOPRES100m_image.jpg",
         "footprint": [
             [
                 43.73857639811545,
@@ -1295,7 +1256,6 @@ var data = [
         "contact": "f.garcia@ieo.csic.es",
         "latitude": 43.7360628623863,
         "longitude": -7.674055508384,
-        "associatedMedia": "https://filedn.eu/lxdSetOgU6G8FNMH4dxBDJQ/coastalDroneMetadataMap/20240528_1559_NORGRASS_BARQUEIRO_PUERTOVICEDO_12NANOPRES20m_image.jpg",
         "footprint": [
             [
                 43.73745796003204,

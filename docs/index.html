@@ -41,6 +41,8 @@
         function showMarkerInfo(item) {
         // Create content for the popup
             latlng = [item.latitude, item.longitude];
+            associatedMedia = `https://filedn.eu/lxdSetOgU6G8FNMH4dxBDJQ/coastalDroneMetadataMap/${item.eventID}_image.jpg`;
+
             var popupContent = `
             <div class="popup-content">
                 <h3>${item.eventID}</h3>
@@ -52,7 +54,7 @@
                         <p><strong>Institution:</strong> ${item.institution}</p>
                         <p><strong>Contact:</strong> ${item.contact}</p>
                     </div>
-                    <img src="${item.associatedMedia}" class="popup-image" />
+                    <img src="${associatedMedia}" class="popup-image" />
                 </div>
             </div>
             `;
