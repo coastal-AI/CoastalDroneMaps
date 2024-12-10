@@ -3,7 +3,7 @@ from shapely import wkt
 import json
 
 # Load the Excel file
-file_path = '0METADATA_DRON.xlsx'
+file_path = 'DRONE_METADATA_CEAB.xlsx'
 data = pd.read_excel(file_path)
 
 # Select relevant columns for conversion to JSON
@@ -43,7 +43,7 @@ json_data = data_filtered.to_dict(orient='records')
 js_variable = f"var data = {json.dumps(json_data, indent=4)};"
 
 # Save to a .js file
-output_js_path = '0METADATA_DRON.js'
+output_js_path = 'DRONE_METADATA_CEAB.js'
 with open(output_js_path, 'w') as js_file:
     js_file.write(js_variable)
 
