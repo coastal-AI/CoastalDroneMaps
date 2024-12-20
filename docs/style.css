@@ -18,19 +18,14 @@ header img {
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Adjust position to truly center */
     color: white; /* Text color */
-    font-size: 2em; /* Adjust font size as needed */
+    font-size: 1.5em; /* Adjust font size as needed */
     font-family: 'Arial', sans-serif; /* Change font type */
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Add a shadow for better visibility */
     text-align: center; /* Center text */
     text-transform: uppercase; /* Make text appear in capital letters */
     font-weight: bold; /* Make text bold */
 }
-/* Responsive adjustments for smaller screens */
-@media (max-width: 600px) {
-    .header-text {
-        font-size: 1.5em; /* Reduce font size on smaller screens */
-        width: 80%; /* Make the text container smaller to fit on small screens */
-    }
+
 .info img {
     max-height: 40%; /* Subtract the height of header and other elements */
     width: auto; /* Keep the width auto to maintain aspect ratio */
