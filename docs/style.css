@@ -25,7 +25,12 @@ header img {
     text-transform: uppercase; /* Make text appear in capital letters */
     font-weight: bold; /* Make text bold */
 }
-
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+    .header-text {
+        font-size: 1.5em; /* Reduce font size on smaller screens */
+        width: 80%; /* Make the text container smaller to fit on small screens */
+    }
 .info img {
     max-height: 40%; /* Subtract the height of header and other elements */
     width: auto; /* Keep the width auto to maintain aspect ratio */
