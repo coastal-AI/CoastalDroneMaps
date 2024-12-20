@@ -1,11 +1,12 @@
 header {
     width: 100%;
-    margin-bottom: 5px;
+    height:auto;
     overflow: hidden;
 }
 header img {
     width: 100%; /* Makes the image full width */
     max-height: 120px; /* Limits the height to 100px */
+    display: block;
     height: auto; /* Keeps the aspect ratio */
     object-fit: cover; 
     object-position: top;
@@ -17,7 +18,7 @@ header img {
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Adjust position to truly center */
     color: white; /* Text color */
-    font-size: 40px; /* Adjust font size as needed */
+    font-size: 2em; /* Adjust font size as needed */
     font-family: 'Arial', sans-serif; /* Change font type */
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Add a shadow for better visibility */
     text-align: center; /* Center text */
@@ -75,8 +76,7 @@ header img {
 
 #map {
     width: 100%;
-    height: calc(100vh - 250px);
-    margin-bottom: 10px;
+    height: calc(100vh - 200px);
 }
 .info {
     width: 30%;
@@ -90,7 +90,6 @@ img {
 footer {
     width: 100%;
     overflow: hidden;
-    margin-top: 5px; /* Add space above footer */
 }
 
 footer img {
