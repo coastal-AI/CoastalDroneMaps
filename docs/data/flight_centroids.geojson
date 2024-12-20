@@ -1,0 +1,1875 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    42.242961229387,
+                    3.22733954379002
+                ]
+            },
+            "properties": {
+                "eventID": "20230925_090700_CATGRASS23_CREUS_RUSTELLA",
+                "eventDate": "2023-09-25T09:07:00",
+                "institutionCode": "GEAM IEO-CSIC",
+                "contact": "f.garcia@ieo.csic.es",
+                "funding": "MITECO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    42.2494271184571,
+                    3.22945631242333
+                ]
+            },
+            "properties": {
+                "eventID": "20230925_095100_CATGRASS23_CREUS_MONTJOI",
+                "eventDate": "2023-09-25T09:51:00",
+                "institutionCode": "GEAM IEO-CSIC",
+                "contact": "f.garcia@ieo.csic.es",
+                "funding": "MITECO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    42.2497648460314,
+                    3.24047399672674
+                ]
+            },
+            "properties": {
+                "eventID": "20230925_110000_CATGRASS23_CREUS_PELOSA",
+                "eventDate": "2023-09-25T11:00:00",
+                "institutionCode": "GEAM IEO-CSIC",
+                "contact": "f.garcia@ieo.csic.es",
+                "funding": "MITECO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    42.3165079111184,
+                    3.31267747836694
+                ]
+            },
+            "properties": {
+                "eventID": "20230925_141200_CATGRASS23_CREUS_JUGADORA",
+                "eventDate": "2023-09-25T14:12:00",
+                "institutionCode": "GEAM IEO-CSIC",
+                "contact": "f.garcia@ieo.csic.es",
+                "funding": "MITECO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    43.458248264864,
+                    -5.06383736860948
+                ]
+            },
+            "properties": {
+                "eventID": "20240124_091200_NORGRASS24_RIBADESELLA",
+                "eventDate": "2024-01-24T09:12:00",
+                "institutionCode": "GEAM IEO-CSIC",
+                "contact": "f.garcia@ieo.csic.es",
+                "funding": "MITECO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    43.3846627273106,
+                    -4.51231722981792
+                ]
+            },
+            "properties": {
+                "eventID": "20240124_121400_NORGRASS24_TINAMAYOR",
+                "eventDate": "2024-01-24T12:14:00",
+                "institutionCode": "GEAM IEO-CSIC",
+                "contact": "f.garcia@ieo.csic.es",
+                "funding": "MITECO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    43.5130937126548,
+                    -5.38439117246366
+                ]
+            },
+            "properties": {
+                "eventID": "20240212_112400_NORGRASS24_VILLAVICIOSA_ENCIENONA",
+                "eventDate": "2024-02-12T11:24:00",
+                "institutionCode": "GEAM IEO-CSIC",
+                "contact": "f.garcia@ieo.csic.es",
+                "funding": "MITECO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    43.524783315238,
+                    -5.38128701718255
+                ]
+            },
+            "properties": {
+                "eventID": "20240212_124000_NORGRASS24_VILLAVICIOSA_MISIEGO",
+                "eventDate": "2024-02-12T12:40:00",
+                "institutionCode": "GEAM IEO-CSIC",
+                "contact": "f.garcia@ieo.csic.es",
+                "funding": "MITECO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    43.4337370099002,
+                    -4.8345613211631
+                ]
+            },
+            "properties": {
+                "eventID": "20240216_140600_NORGRASS24_NIEMBRO1",
+                "eventDate": "2024-02-16T14:06:00",
+                "institutionCode": "GEAM IEO-CSIC",
+                "contact": "f.garcia@ieo.csic.es",
+                "funding": "MITECO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    43.4341732027333,
+                    -4.83293916763588
+                ]
+            },
+            "properties": {
+                "eventID": "20240216_143200_NORGRASS24_NIEMBRO_ZOOM",
+                "eventDate": "2024-02-16T14:32:00",
+                "institutionCode": "GEAM IEO-CSIC",
+                "contact": "f.garcia@ieo.csic.es",
+                "funding": "MITECO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    43.3960530012932,
+                    -4.61173412272068
+                ]
+            },
+            "properties": {
+                "eventID": "20240216_154000_NORGRASS24_COBIJERO",
+                "eventDate": "2024-02-16T15:40:00",
+                "institutionCode": "GEAM IEO-CSIC",
+                "contact": "f.garcia@ieo.csic.es",
+                "funding": "MITECO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    43.4349931188177,
+                    -4.83539685675678
+                ]
+            },
+            "properties": {
+                "eventID": "20240216_163600_NORGRASS24_NIEMBRO2",
+                "eventDate": "2024-02-16T16:36:00",
+                "institutionCode": "GEAM IEO-CSIC",
+                "contact": "f.garcia@ieo.csic.es",
+                "funding": "MITECO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    43.5232703798646,
+                    -5.38403091695181
+                ]
+            },
+            "properties": {
+                "eventID": "20240315_123300_NORGRASS24_VILLAVICIOSA_BORNIZAL",
+                "eventDate": "2024-03-15T12:33:00",
+                "institutionCode": "GEAM IEO-CSIC",
+                "contact": "f.garcia@ieo.csic.es",
+                "funding": "MITECO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    43.5194007524181,
+                    -5.3857666357549
+                ]
+            },
+            "properties": {
+                "eventID": "20240405_101600_NORGRASS24_VILLAVICIOSA_BORNIZAL2",
+                "eventDate": "2024-04-05T10:16:00",
+                "institutionCode": "GEAM IEO-CSIC",
+                "contact": "f.garcia@ieo.csic.es",
+                "funding": "MITECO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    43.5037174438576,
+                    -5.42287743920885
+                ]
+            },
+            "properties": {
+                "eventID": "20240410_112400_NORGRASS24_VILLAVICIOSA_IZQ1",
+                "eventDate": "2024-04-10T11:24:00",
+                "institutionCode": "GEAM IEO-CSIC",
+                "contact": "f.garcia@ieo.csic.es",
+                "funding": "MITECO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    43.5148914025492,
+                    -5.39138692771449
+                ]
+            },
+            "properties": {
+                "eventID": "20240411_124600_NORGRASS24_VILLAVICIOSA_BORNIZAL3",
+                "eventDate": "2024-04-11T12:46:00",
+                "institutionCode": "GEAM IEO-CSIC",
+                "contact": "f.garcia@ieo.csic.es",
+                "funding": "MITECO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    43.5093615173382,
+                    -5.40485579427833
+                ]
+            },
+            "properties": {
+                "eventID": "20240411_133200_NORGRASS24_VILLAVICIOSA_MOLINO1",
+                "eventDate": "2024-04-11T13:32:00",
+                "institutionCode": "GEAM IEO-CSIC",
+                "contact": "f.garcia@ieo.csic.es",
+                "funding": "MITECO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    43.5065809334354,
+                    -5.4162426144646
+                ]
+            },
+            "properties": {
+                "eventID": "20240411_140800_NORGRASS24_VILLAVICIOSA_MOLINO2",
+                "eventDate": "2024-04-11T14:08:00",
+                "institutionCode": "GEAM IEO-CSIC",
+                "contact": "f.garcia@ieo.csic.es",
+                "funding": "MITECO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    43.5143490299469,
+                    -5.4049936421013
+                ]
+            },
+            "properties": {
+                "eventID": "20240412_130400_NORGRASS24_VILLAVICIOSA_IZQ2",
+                "eventDate": "2024-04-12T13:04:00",
+                "institutionCode": "GEAM IEO-CSIC",
+                "contact": "f.garcia@ieo.csic.es",
+                "funding": "MITECO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    43.5214916289308,
+                    -5.39466475054331
+                ]
+            },
+            "properties": {
+                "eventID": "20240412_141800_NORGRASS24_VILLAVICIOSA_IZQ3",
+                "eventDate": "2024-04-12T14:18:00",
+                "institutionCode": "GEAM IEO-CSIC",
+                "contact": "f.garcia@ieo.csic.es",
+                "funding": "MITECO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    43.532895054013,
+                    -5.38848964872319
+                ]
+            },
+            "properties": {
+                "eventID": "20240412_150700_NORGRASS24_VILLAVICIOSA_IZQ4",
+                "eventDate": "2024-04-12T15:07:00",
+                "institutionCode": "GEAM IEO-CSIC",
+                "contact": "f.garcia@ieo.csic.es",
+                "funding": "MITECO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    43.5125207646987,
+                    -5.40093724188165
+                ]
+            },
+            "properties": {
+                "eventID": "20240507_094600_NORGRASS24_VILLAVICIOSA_DCHA_REMATE1",
+                "eventDate": "2024-05-07T09:46:00",
+                "institutionCode": "GEAM IEO-CSIC",
+                "contact": "f.garcia@ieo.csic.es",
+                "funding": "MITECO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    43.5181474396753,
+                    -5.38257434263555
+                ]
+            },
+            "properties": {
+                "eventID": "20240507_102900_NORGRASS24_VILLAVICIOSA_DCHA_REMATE3",
+                "eventDate": "2024-05-07T10:29:00",
+                "institutionCode": "GEAM IEO-CSIC",
+                "contact": "f.garcia@ieo.csic.es",
+                "funding": "MITECO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    43.5222821701613,
+                    -5.38681130294329
+                ]
+            },
+            "properties": {
+                "eventID": "20240507_105400_NORGRASS24_VILLAVICIOSA_DCHA_REMATE2",
+                "eventDate": "2024-05-07T10:54:00",
+                "institutionCode": "GEAM IEO-CSIC",
+                "contact": "f.garcia@ieo.csic.es",
+                "funding": "MITECO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    43.4112167844766,
+                    -3.45635504550257
+                ]
+            },
+            "properties": {
+                "eventID": "20240516_075800_NORGRASS24_SANTON\u0303A_REGATON",
+                "eventDate": "2024-05-16T07:58:00",
+                "institutionCode": "GEAM IEO-CSIC",
+                "contact": "f.garcia@ieo.csic.es",
+                "funding": "MITECO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    43.4382017013049,
+                    -3.47094471704174
+                ]
+            },
+            "properties": {
+                "eventID": "20240516_171900_NORGRASS24_SANTON\u0303A_ARENILLA_ZOS",
+                "eventDate": "2024-05-16T17:19:00",
+                "institutionCode": "GEAM IEO-CSIC",
+                "contact": "f.garcia@ieo.csic.es",
+                "funding": "MITECO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    43.4377986884299,
+                    -3.4674037124084
+                ]
+            },
+            "properties": {
+                "eventID": "20240516_181500_NORGRASS24_SANTON\u0303A_ARENILLA_NANO",
+                "eventDate": "2024-05-16T18:15:00",
+                "institutionCode": "GEAM IEO-CSIC",
+                "contact": "f.garcia@ieo.csic.es",
+                "funding": "MITECO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    43.4208757398766,
+                    -3.47828529185673
+                ]
+            },
+            "properties": {
+                "eventID": "20240517_090000_NORGRASS24_SANTON\u0303A_SOLLAGUA_NANO",
+                "eventDate": "2024-05-17T09:00:00",
+                "institutionCode": "GEAM IEO-CSIC",
+                "contact": "f.garcia@ieo.csic.es",
+                "funding": "MITECO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    43.4063670868357,
+                    -3.45849058471019
+                ]
+            },
+            "properties": {
+                "eventID": "20240518_090700_NORGRASS24_SANTON\u0303A_REGATON_NANO",
+                "eventDate": "2024-05-18T09:07:00",
+                "institutionCode": "GEAM IEO-CSIC",
+                "contact": "f.garcia@ieo.csic.es",
+                "funding": "MITECO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    43.5161988822994,
+                    -5.39795107798888
+                ]
+            },
+            "properties": {
+                "eventID": "20240520_104500_NORGRASS24_VILLAVICIOSA_ALBATROS_NANO",
+                "eventDate": "2024-05-20T10:45:00",
+                "institutionCode": "GEAM IEO-CSIC",
+                "contact": "f.garcia@ieo.csic.es",
+                "funding": "MITECO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    43.5257753323138,
+                    -7.01867225193532
+                ]
+            },
+            "properties": {
+                "eventID": "20240523_112500_NORGRASS24_EO_LINIERA_NANO12m",
+                "eventDate": "2024-05-23T11:25:00",
+                "institutionCode": "GEAM IEO-CSIC",
+                "contact": "f.garcia@ieo.csic.es",
+                "funding": "MITECO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    43.5275346697475,
+                    -7.01930267716071
+                ]
+            },
+            "properties": {
+                "eventID": "20240523_114900_NORGRASS24_EO_LINIERA_NANO120m",
+                "eventDate": "2024-05-23T11:49:00",
+                "institutionCode": "GEAM IEO-CSIC",
+                "contact": "f.garcia@ieo.csic.es",
+                "funding": "MITECO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    43.7116716809352,
+                    -7.86653035563876
+                ]
+            },
+            "properties": {
+                "eventID": "20240525_111600_NORGRASS24_ORTIGUEIRA_FIGUEIROA_NANO20m",
+                "eventDate": "2024-05-25T11:16:00",
+                "institutionCode": "GEAM IEO-CSIC",
+                "contact": "f.garcia@ieo.csic.es",
+                "funding": "MITECO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    43.7125989467075,
+                    -7.8672858569733
+                ]
+            },
+            "properties": {
+                "eventID": "20240525_114300_NORGRASS24_ORTIGUEIRA_FIGUEIROA_NANO120m",
+                "eventDate": "2024-05-25T11:43:00",
+                "institutionCode": "GEAM IEO-CSIC",
+                "contact": "f.garcia@ieo.csic.es",
+                "funding": "MITECO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    43.7040056429363,
+                    -7.87525949561759
+                ]
+            },
+            "properties": {
+                "eventID": "20240526_103600_NORGRASS24_ORTIGUEIRA_SISMUNDI_ZOS12m",
+                "eventDate": "2024-05-26T10:36:00",
+                "institutionCode": "GEAM IEO-CSIC",
+                "contact": "f.garcia@ieo.csic.es",
+                "funding": "MITECO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    43.6984297866183,
+                    -7.87692433585268
+                ]
+            },
+            "properties": {
+                "eventID": "20240526_114200_NORGRASS24_ORTIGUEIRA_SISMUNDI_ZOS120m",
+                "eventDate": "2024-05-26T11:42:00",
+                "institutionCode": "GEAM IEO-CSIC",
+                "contact": "f.garcia@ieo.csic.es",
+                "funding": "MITECO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    43.7134587980675,
+                    -7.69741869415878
+                ]
+            },
+            "properties": {
+                "eventID": "20240526_125500_NORGRASS24_BARQUEIRO_CREIXIMIL_NANO12m",
+                "eventDate": "2024-05-26T12:55:00",
+                "institutionCode": "GEAM IEO-CSIC",
+                "contact": "f.garcia@ieo.csic.es",
+                "funding": "MITECO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    43.7119098958683,
+                    -7.69630906408618
+                ]
+            },
+            "properties": {
+                "eventID": "20240526_132900_NORGRASS24_BARQUEIRO_CREIXIMIL_NANO100m",
+                "eventDate": "2024-05-26T13:29:00",
+                "institutionCode": "GEAM IEO-CSIC",
+                "contact": "f.garcia@ieo.csic.es",
+                "funding": "MITECO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    43.7356165997063,
+                    -7.67622604734867
+                ]
+            },
+            "properties": {
+                "eventID": "20240527_145000_NORGRASS24_BARQUEIRO_PUERTOVICEDO_NANO100m",
+                "eventDate": "2024-05-27T14:50:00",
+                "institutionCode": "GEAM IEO-CSIC",
+                "contact": "f.garcia@ieo.csic.es",
+                "funding": "MITECO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    43.7360628623863,
+                    -7.674055508384
+                ]
+            },
+            "properties": {
+                "eventID": "20240528_155900_NORGRASS24_BARQUEIRO_PUERTOVICEDO_NANO20m",
+                "eventDate": "2024-05-28T15:59:00",
+                "institutionCode": "GEAM IEO-CSIC",
+                "contact": "f.garcia@ieo.csic.es",
+                "funding": "MITECO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.80175,
+                    41.67415
+                ]
+            },
+            "properties": {
+                "eventID": "20180000BLANES",
+                "eventDate": "2018-01-01 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "jboada@ceab.csic.es",
+                "funding": NaN
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.295839,
+                    42.285847
+                ]
+            },
+            "properties": {
+                "eventID": "20180000CAPCREUS",
+                "eventDate": "2018-01-01 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "jboada@ceab.csic.es",
+                "funding": NaN
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.816607,
+                    41.681846
+                ]
+            },
+            "properties": {
+                "eventID": "20190724BLANES",
+                "eventDate": "2019-07-24 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "jboada@ceab.csic.es",
+                "funding": "GENCAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.816482,
+                    41.681898
+                ]
+            },
+            "properties": {
+                "eventID": "20191011BLANES",
+                "eventDate": "2019-10-11 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "jboada@ceab.csic.es",
+                "funding": "GENCAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.816059,
+                    41.682516
+                ]
+            },
+            "properties": {
+                "eventID": "20200930BLANES",
+                "eventDate": "2020-09-30 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "jboada@ceab.csic.es",
+                "funding": "GENCAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.471052,
+                    41.547135
+                ]
+            },
+            "properties": {
+                "eventID": "20210127MATARO",
+                "eventDate": "2021-01-27 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "jboada@ceab.csic.es",
+                "funding": NaN
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.168972,
+                    42.107886
+                ]
+            },
+            "properties": {
+                "eventID": "20210422MONTGO",
+                "eventDate": "2021-04-22 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "f.garcia@ceab.csic.es",
+                "funding": "CSIC"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.144003,
+                    41.858068
+                ]
+            },
+            "properties": {
+                "eventID": "20210429FOSCA",
+                "eventDate": "2021-04-29 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "jboada@ceab.csic.es",
+                "funding": NaN
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.228007,
+                    42.251185
+                ]
+            },
+            "properties": {
+                "eventID": "20210430MONTJOI",
+                "eventDate": "2021-04-30 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "f.garcia@ceab.csic.es",
+                "funding": "CSIC"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.293356,
+                    42.282982
+                ]
+            },
+            "properties": {
+                "eventID": "20210715SARANELLA",
+                "eventDate": "2021-07-15 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "jboada@ceab.csic.es",
+                "funding": "NORWAY"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.229941,
+                    41.960489
+                ]
+            },
+            "properties": {
+                "eventID": "20210811SATUNA20",
+                "eventDate": "2021-08-11 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "jboada@ceab.csic.es",
+                "funding": "NORWAY"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.229941,
+                    41.960489
+                ]
+            },
+            "properties": {
+                "eventID": "20210811SATUNA40",
+                "eventDate": "2021-08-11 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "jboada@ceab.csic.es",
+                "funding": "NORWAY"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.816098,
+                    41.682134
+                ]
+            },
+            "properties": {
+                "eventID": "20211019AGULLAZOOM",
+                "eventDate": "2021-10-19 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "f.garcia@ceab.csic.es",
+                "funding": "GENCAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.816721,
+                    41.686543
+                ]
+            },
+            "properties": {
+                "eventID": "20211019TREUMAL",
+                "eventDate": "2021-10-19 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "f.garcia@ceab.csic.es",
+                "funding": "GENCAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.18254,
+                    40.021732
+                ]
+            },
+            "properties": {
+                "eventID": "20211028ARENALCASTELL",
+                "eventDate": "2021-10-28 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "jboada@ceab.csic.es",
+                "funding": "NORWAY"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.289422,
+                    39.9161
+                ]
+            },
+            "properties": {
+                "eventID": "20211028MESQUIDA",
+                "eventDate": "2021-10-28 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "jboada@ceab.csic.es",
+                "funding": "NORWAY"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.10293,
+                    40.047311
+                ]
+            },
+            "properties": {
+                "eventID": "20211028TIRANT",
+                "eventDate": "2021-10-28 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "jboada@ceab.csic.es",
+                "funding": "NORWAY"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.090311,
+                    40.076915
+                ]
+            },
+            "properties": {
+                "eventID": "20211028VIOLA",
+                "eventDate": "2021-10-28 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "jboada@ceab.csic.es",
+                "funding": "NORWAY"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.80841,
+                    41.678453
+                ]
+            },
+            "properties": {
+                "eventID": "20211121STFRANCESC",
+                "eventDate": "2021-11-21 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "f.garcia@ceab.csic.es",
+                "funding": "GENCAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.801709,
+                    41.67389
+                ]
+            },
+            "properties": {
+                "eventID": "20211122STAANNA",
+                "eventDate": "2021-11-22 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "f.garcia@ceab.csic.es",
+                "funding": "GENCAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.803332,
+                    41.675778
+                ]
+            },
+            "properties": {
+                "eventID": "20211123FORCANERA",
+                "eventDate": "2021-11-23 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "f.garcia@ceab.csic.es",
+                "funding": "GENCAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.792022,
+                    41.670149
+                ]
+            },
+            "properties": {
+                "eventID": "20211123PALOMERA",
+                "eventDate": "2021-11-23 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "f.garcia@ceab.csic.es",
+                "funding": "GENCAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.954134,
+                    41.737159
+                ]
+            },
+            "properties": {
+                "eventID": "20211213GIVEROLA",
+                "eventDate": "2021-12-13 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "f.garcia@ceab.csic.es",
+                "funding": "CSIC"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.827411,
+                    41.689766
+                ]
+            },
+            "properties": {
+                "eventID": "20211214FENALS",
+                "eventDate": "2021-12-14 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "f.garcia@ceab.csic.es",
+                "funding": NaN
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.859515,
+                    41.698522
+                ]
+            },
+            "properties": {
+                "eventID": "20211215FRARES",
+                "eventDate": "2021-12-15 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "f.garcia@ceab.csic.es",
+                "funding": NaN
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.216325,
+                    41.93419
+                ]
+            },
+            "properties": {
+                "eventID": "20211216AIGUABLAVA",
+                "eventDate": "2021-12-16 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "f.garcia@ceab.csic.es",
+                "funding": "CSIC"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.828161,
+                    41.689049
+                ]
+            },
+            "properties": {
+                "eventID": "20211216FENALS",
+                "eventDate": "2021-12-16 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "f.garcia@ceab.csic.es",
+                "funding": NaN
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.311663,
+                    42.317371
+                ]
+            },
+            "properties": {
+                "eventID": "20211217JUGADORA",
+                "eventDate": "2021-12-17 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "f.garcia@ceab.csic.es",
+                "funding": "CSIC"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.226216,
+                    42.243926
+                ]
+            },
+            "properties": {
+                "eventID": "20211217RUSTELLA",
+                "eventDate": "2021-12-17 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "f.garcia@ceab.csic.es",
+                "funding": "CSIC"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.883597,
+                    41.703408
+                ]
+            },
+            "properties": {
+                "eventID": "20211218CANYELLES",
+                "eventDate": "2021-12-18 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "f.garcia@ceab.csic.es",
+                "funding": NaN
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.859227,
+                    41.698726
+                ]
+            },
+            "properties": {
+                "eventID": "20211220FRARES",
+                "eventDate": "2021-12-20 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "f.garcia@ceab.csic.es",
+                "funding": NaN
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.382016,
+                    41.495845
+                ]
+            },
+            "properties": {
+                "eventID": "20220102VILASSAR",
+                "eventDate": "2022-01-02 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "jboada@ceab.csic.es",
+                "funding": "CSIC"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.19361,
+                    41.891857
+                ]
+            },
+            "properties": {
+                "eventID": "20220216LLAFRANC",
+                "eventDate": "2022-02-16 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "jboada@ceab.csic.es",
+                "funding": "NORWAY"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.201228,
+                    40.016755
+                ]
+            },
+            "properties": {
+                "eventID": "20220421MACARET",
+                "eventDate": "2022-04-21 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "jboada@ceab.csic.es",
+                "funding": "NORWAY"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.277594,
+                    39.894604
+                ]
+            },
+            "properties": {
+                "eventID": "20220422RATA",
+                "eventDate": "2022-04-22 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "jboada@ceab.csic.es",
+                "funding": "NORWAY"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.090555,
+                    40.076621
+                ]
+            },
+            "properties": {
+                "eventID": "20220422VIOLA",
+                "eventDate": "2022-04-22 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "jboada@ceab.csic.es",
+                "funding": "NORWAY"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.307844,
+                    39.879656
+                ]
+            },
+            "properties": {
+                "eventID": "20220424TEULERAAFTERNOON",
+                "eventDate": "2022-04-24 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "jboada@ceab.csic.es",
+                "funding": NaN
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.308528,
+                    39.87936
+                ]
+            },
+            "properties": {
+                "eventID": "20220424TEULERAMORNING",
+                "eventDate": "2022-04-24 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "jboada@ceab.csic.es",
+                "funding": NaN
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.309032,
+                    39.879031
+                ]
+            },
+            "properties": {
+                "eventID": "20220424TEULEREVENING",
+                "eventDate": "2022-04-24 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "jboada@ceab.csic.es",
+                "funding": NaN
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.201279,
+                    40.016882
+                ]
+            },
+            "properties": {
+                "eventID": "20220426MACARETAFTERNOON",
+                "eventDate": "2022-04-26 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "jboada@ceab.csic.es",
+                "funding": "NORWAY"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.201158,
+                    40.016987
+                ]
+            },
+            "properties": {
+                "eventID": "20220426MACARETEVENING",
+                "eventDate": "2022-04-26 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "jboada@ceab.csic.es",
+                "funding": "NORWAY"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.201463,
+                    40.017224
+                ]
+            },
+            "properties": {
+                "eventID": "20220426MACARETMORNING",
+                "eventDate": "2022-04-26 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "jboada@ceab.csic.es",
+                "funding": "NORWAY"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    7.052106,
+                    43.505891
+                ]
+            },
+            "properties": {
+                "eventID": "20220528STHONORATSE",
+                "eventDate": "2022-05-28 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "Jana.verdura@univ-cotedazur.fr",
+                "funding": NaN
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    7.036664,
+                    43.508036
+                ]
+            },
+            "properties": {
+                "eventID": "20220529STHONORATE",
+                "eventDate": "2022-05-29 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "Jana.verdura@univ-cotedazur.fr",
+                "funding": NaN
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    7.053269,
+                    43.508835
+                ]
+            },
+            "properties": {
+                "eventID": "20220529STHONORATNE",
+                "eventDate": "2022-05-29 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "Jana.verdura@univ-cotedazur.fr",
+                "funding": NaN
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    7.038394,
+                    43.506194
+                ]
+            },
+            "properties": {
+                "eventID": "20220529STHONORATSW",
+                "eventDate": "2022-05-29 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "Jana.verdura@univ-cotedazur.fr",
+                "funding": NaN
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0.836788,
+                    40.675971
+                ]
+            },
+            "properties": {
+                "eventID": "20220913ALFACADA",
+                "eventDate": "2022-09-13 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "jpages@ceab.csic.es",
+                "funding": "MITECO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0.844722,
+                    40.729824
+                ]
+            },
+            "properties": {
+                "eventID": "20220914GARXAL",
+                "eventDate": "2022-09-14 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "jpages@ceab.csic.es",
+                "funding": "MITECO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.962124,
+                    40.73013
+                ]
+            },
+            "properties": {
+                "eventID": "20221005CASTELLOARAGONESE",
+                "eventDate": "2022-10-05 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "jboada@ceab.csic.es",
+                "funding": "H2020"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.963254,
+                    40.730812
+                ]
+            },
+            "properties": {
+                "eventID": "20221005CASTELLOARAGONESEZOOM",
+                "eventDate": "2022-10-05 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "jboada@ceab.csic.es",
+                "funding": "H2020"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.957585,
+                    40.73566
+                ]
+            },
+            "properties": {
+                "eventID": "20221005VULLATURA",
+                "eventDate": "2022-10-05 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "jboada@ceab.csic.es",
+                "funding": "H2020"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.102947,
+                    40.046962
+                ]
+            },
+            "properties": {
+                "eventID": "20221011TIRANT",
+                "eventDate": "2022-10-11 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "jboada@ceab.csic.es",
+                "funding": "NORWAY"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.20114,
+                    40.016981
+                ]
+            },
+            "properties": {
+                "eventID": "20221013MACARET",
+                "eventDate": "2022-10-13 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "jboada@ceab.csic.es",
+                "funding": "NORWAY"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0.846437,
+                    40.730957
+                ]
+            },
+            "properties": {
+                "eventID": "20221026GARXAL",
+                "eventDate": "2022-10-26 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "jpages@ceab.csic.es",
+                "funding": "MITECO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0.787603,
+                    40.770603
+                ]
+            },
+            "properties": {
+                "eventID": "20221026MARQUESA",
+                "eventDate": "2022-10-26 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "jpages@ceab.csic.es",
+                "funding": "MITECO"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    7.047065,
+                    43.509566
+                ]
+            },
+            "properties": {
+                "eventID": "20221108STHONORATN",
+                "eventDate": "2022-11-08 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "Jana.verdura@univ-cotedazur.fr",
+                "funding": NaN
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    7.048453,
+                    43.505522
+                ]
+            },
+            "properties": {
+                "eventID": "20221108STHONORATSSE",
+                "eventDate": "2022-11-08 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "Jana.verdura@univ-cotedazur.fr",
+                "funding": NaN
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    7.04682,
+                    43.505459
+                ]
+            },
+            "properties": {
+                "eventID": "20221108STHONORATSSW",
+                "eventDate": "2022-11-08 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "Jana.verdura@univ-cotedazur.fr",
+                "funding": NaN
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    7.054608,
+                    43.508161
+                ]
+            },
+            "properties": {
+                "eventID": "20221109STHONORATCUVFOENI",
+                "eventDate": "2022-11-09 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "Jana.verdura@univ-cotedazur.fr",
+                "funding": NaN
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    7.057819,
+                    43.506199
+                ]
+            },
+            "properties": {
+                "eventID": "20221109STHONORATEISLAND",
+                "eventDate": "2022-11-09 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "Jana.verdura@univ-cotedazur.fr",
+                "funding": NaN
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    7.040383,
+                    43.509263
+                ]
+            },
+            "properties": {
+                "eventID": "20221109STHONORATNW",
+                "eventDate": "2022-11-09 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "Jana.verdura@univ-cotedazur.fr",
+                "funding": NaN
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    7.039984,
+                    43.5065
+                ]
+            },
+            "properties": {
+                "eventID": "20221110STHONORATCUVBARBATA",
+                "eventDate": "2022-11-10 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "Jana.verdura@univ-cotedazur.fr",
+                "funding": NaN
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.81713,
+                    41.686226
+                ]
+            },
+            "properties": {
+                "eventID": "20221113TREUMAL",
+                "eventDate": "2022-11-13 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "jboada@ceab.csic.es",
+                "funding": "GENCAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.804781,
+                    41.675942
+                ]
+            },
+            "properties": {
+                "eventID": "20221119FORCANERA",
+                "eventDate": "2022-11-19 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "jboada@ceab.csic.es",
+                "funding": "GENCAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.80782,
+                    41.677761
+                ]
+            },
+            "properties": {
+                "eventID": "20221120STFRANCESC",
+                "eventDate": "2022-11-20 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "jboada@ceab.csic.es",
+                "funding": "GENCAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.792012,
+                    41.670487
+                ]
+            },
+            "properties": {
+                "eventID": "20221126PALOMERA",
+                "eventDate": "2022-11-26 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "jboada@ceab.csic.es",
+                "funding": "GENCAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.801583,
+                    41.673243
+                ]
+            },
+            "properties": {
+                "eventID": "20221129STAANNA",
+                "eventDate": "2022-11-29 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "jboada@ceab.csic.es",
+                "funding": "GENCAT"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    9.778005,
+                    40.87427
+                ]
+            },
+            "properties": {
+                "eventID": "20241022MOLAROTO",
+                "eventDate": "2024-10-22 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "jboada@ceab.csic.es",
+                "funding": "BIODIVERSA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    9.653131,
+                    40.98735
+                ]
+            },
+            "properties": {
+                "eventID": "20241023CALAGRECA",
+                "eventDate": "2024-10-23 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "jboada@ceab.csic.es",
+                "funding": "BIODIVERSA"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    9.633377,
+                    40.92069
+                ]
+            },
+            "properties": {
+                "eventID": "20241024CAPOCERASONORD",
+                "eventDate": "2024-10-24 00:00:00",
+                "institutionCode": "CEAB-CSIC",
+                "contact": "jboada@ceab.csic.es",
+                "funding": "BIODIVERSA"
+            }
+        }
+    ]
+}
