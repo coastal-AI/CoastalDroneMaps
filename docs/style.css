@@ -59,8 +59,12 @@ header img {
 }
 
 .popup-image {
-    max-width: 200px; /* Set a max width for the image */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 200px;  /* Set a max width for the image */
+    max-height: 150px; /* Set a max height to limit the vertical size */
+    width: auto;       /* Allow width to scale */
+    height: auto;      /* Maintain aspect ratio */
+    display: block;    /* Ensure the image is block-level to prevent text wrapping */
+    margin: 0 auto;    /* Center the image horizontally */
 }
 
 /* Optional: Add some margin to the h3 for spacing */

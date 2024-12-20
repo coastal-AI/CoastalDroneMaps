@@ -43,62 +43,66 @@
         // Create a MarkerClusterGroup to hold the markers
         var markersLayer = L.markerClusterGroup();
 
-        function showMarkerInfo(item) {
-            // Create the content for the popup
-            var associatedMedia = `https://filedn.eu/lxdSetOgU6G8FNMH4dxBDJQ/coastalDroneMetadataMap/${item.eventID}_image.jpg`;
-            var latlng = [item.decimalLatitude, item.decimalLongitude];
+   function showMarkerInfo(item) {
+    // Create the content for the popup
+    var associatedMedia = `https://filedn.eu/lxdSetOgU6G8FNMH4dxBDJQ/coastalDroneMetadataMap/${item.eventID}_image.jpg`;
+    var latlng = [item.decimalLatitude, item.decimalLongitude];
 
-            // Create a container element for the popup
-            var popupContent = document.createElement("div");
-            popupContent.className = "popup-content";
+    // Create a container element for the popup
+    var popupContent = document.createElement("div");
+    popupContent.className = "popup-content";
 
-            // Add text content
-            popupContent.innerHTML = `
-                <h3>${item.eventID}</h3>
-                <div class="popup-info-container">
-                    <div class="popup-info">
-                        <p><strong>Event Date:</strong> ${item.eventDate}</p>
-                        <p><strong>Institution:</strong> ${item.institutionCode}</p>
-                        <p><strong>Contact:</strong> ${item.contact}</p>
-                        <p><strong>Funding:</strong> ${item.funding}</p>
-                    </div>
-                     <div class="image-container">
-                        <p class="image-title"><strong>Preview:</strong></p>
-                        <p class="loading-text">Loading...</p>
-                        <a href="${associatedMedia}" target="_blank">
-                            <img src="${associatedMedia}" class="popup-image" style="display: none;" />
-                        </a>
-                     </div>
-                </div>
-            `;
+    // Add text content, including the eventID above the image
+    popupContent.innerHTML = `
+        <h3>${item.eventID}</h3>  <!-- Display the eventID as the title -->
+        <div class="popup-info-container">
+            <div class="popup-info">
+                <p><strong>Event Date:</strong> ${item.eventDate}</p>
+                <p><strong>Institution:</strong> ${item.institutionCode}</p>
+                <p><strong>Contact:</strong> ${item.contact}</p>
+                <p><strong>Funding:</strong> ${item.funding}</p>
+            </div>
+            <div class="image-container">
+                <p class="image-title"><strong>Preview:</strong></p>
+                <p class="loading-text">Loading...</p>
+                <a href="${associatedMedia}" target="_blank">
+                    <img src="${associatedMedia}" class="popup-image" style="display: none;" />
+                </a>
+                <p class="click-to-enlarge" style="display: none;">Click to enlarge</p> <!-- Initially hidden -->
+            </div>
+        </div>
+    `;
 
-            // Create the popup and bind it to the map
-            var popup = L.popup()
-                .setLatLng(latlng)
-                .setContent(popupContent)
-                .openOn(map);
+    // Create the popup and bind it to the map
+    var popup = L.popup()
+        .setLatLng(latlng)
+        .setContent(popupContent)
+        .openOn(map);
 
-            // Handle the image load event
-            var image = popupContent.querySelector("img");
-            var loadingText = popupContent.querySelector(".loading-text");
+    // Handle the image load event
+    var image = popupContent.querySelector("img");
+    var loadingText = popupContent.querySelector(".loading-text");
+    var clickToEnlarge = popupContent.querySelector(".click-to-enlarge");
 
-            image.onload = function () {
-                // Once the image is loaded, make it visible and hide the loading message
-                image.style.display = "block";
-                loadingText.style.display = "none";
+    image.onload = function () {
+        // Once the image is loaded, make it visible, hide the loading message and show the "Click to enlarge"
+        image.style.display = "block";
+        loadingText.style.display = "none";
+        clickToEnlarge.style.display = "block"; // Show the "Click to enlarge" message
 
-                // Reposition the popup to ensure it fits within the map
-                map.invalidateSize();
-                popup.update();
-            };
+        // Reposition the popup to ensure it fits within the map
+        map.invalidateSize();
+        popup.update();
+    };
 
-            // If the image fails to load, handle the error
-            image.onerror = function () {
-                // Replace loading text with an error message
-                loadingText.textContent = "Not available";
-                loadingText.style.display = "block";
-            };
-        }
+    // If the image fails to load, handle the error
+    image.onerror = function () {
+        // Replace loading text with an error message
+        loadingText.textContent = "Not available";
+        loadingText.style.display = "block";
+        clickToEnlarge.style.display = "none"; // Don't show "Click to enlarge" if the image is not available
+    };
+}
     
         // Add polygons
         data.forEach(function(item) {
