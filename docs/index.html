@@ -5,8 +5,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
     <link rel="stylesheet" href="style.css"/>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
     <script src="data/coastalDroneMetadataMap.js"></script> <!-- External JS with data -->
 </head>
 <body>
@@ -28,7 +31,6 @@
         </div>
     </footer>
         
-    
     <script>
         // Initialize map
         var map = L.map('map').setView([43.75, -5.23], 5); // Change to your desired coordinates
@@ -38,13 +40,20 @@
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);
 
-        function showMarkerInfo(item) {
-        // Create content for the popup
-            latlng = [item.decimalLatitude, item.decimalLongitude];
-            associatedMedia = `https://filedn.eu/lxdSetOgU6G8FNMH4dxBDJQ/coastalDroneMetadataMap/${item.eventID}_image.jpg`;
+        // Create a MarkerClusterGroup to hold the markers
+        var markersLayer = L.markerClusterGroup();
 
-            var popupContent = `
-            <div class="popup-content">
+        function showMarkerInfo(item) {
+            // Create the content for the popup
+            var associatedMedia = `https://filedn.eu/lxdSetOgU6G8FNMH4dxBDJQ/coastalDroneMetadataMap/${item.eventID}_image.jpg`;
+            var latlng = [item.decimalLatitude, item.decimalLongitude];
+
+            // Create a container element for the popup
+            var popupContent = document.createElement("div");
+            popupContent.className = "popup-content";
+
+            // Add text content
+            popupContent.innerHTML = `
                 <h3>${item.eventID}</h3>
                 <div class="popup-info-container">
                     <div class="popup-info">
@@ -53,44 +62,68 @@
                         <p><strong>Contact:</strong> ${item.contact}</p>
                         <p><strong>Funding:</strong> ${item.funding}</p>
                     </div>
-                    <a href="${associatedMedia}" target="_blank">
-                        <img src="${associatedMedia}" class="popup-image" />
-                    </a>
+                     <div class="image-container">
+                        <p class="image-title"><strong>Preview:</strong></p>
+                        <p class="loading-text">Loading...</p>
+                        <a href="${associatedMedia}" target="_blank">
+                            <img src="${associatedMedia}" class="popup-image" style="display: none;" />
+                        </a>
+                     </div>
                 </div>
-            </div>
             `;
-            
-            // Create and open the popup
-            L.popup()
+
+            // Create the popup and bind it to the map
+            var popup = L.popup()
                 .setLatLng(latlng)
                 .setContent(popupContent)
                 .openOn(map);
-        };
-        
+
+            // Handle the image load event
+            var image = popupContent.querySelector("img");
+            var loadingText = popupContent.querySelector(".loading-text");
+
+            image.onload = function () {
+                // Once the image is loaded, make it visible and hide the loading message
+                image.style.display = "block";
+                loadingText.style.display = "none";
+
+                // Reposition the popup to ensure it fits within the map
+                map.invalidateSize();
+                popup.update();
+            };
+
+            // If the image fails to load, handle the error
+            image.onerror = function () {
+                // Replace loading text with an error message
+                loadingText.textContent = "Not available";
+                loadingText.style.display = "block";
+            };
+        }
     
         // Add polygons
         data.forEach(function(item) {
             var polygon = L.polygon(item.polygon, {color: 'blue', fillOpacity: 0.1}).addTo(map);
-            });
+        });
 
-        // Add markers and store them in an array
-        var markers = [];
+        // Add markers to the MarkerClusterGroup
         data.forEach(function(item) {
             var marker = L.circleMarker([item.decimalLatitude, item.decimalLongitude], {
-            radius: 4, // Adjust the radius as needed
-            color: 'lightblue', // Adjust the color as needed
-            fillColor: 'blue', // Adjust the fill color to light blue
-            fillOpacity: 0.5 // Adjust the fill opacity as needed
-            }).addTo(map);
-            markers.push(marker);
-            marker.on('click', function(){ 
-            showMarkerInfo(item)
+                radius: 4, // Adjust the radius as needed
+                color: 'lightblue', // Adjust the color as needed
+                fillColor: 'blue', // Adjust the fill color to light blue
+                fillOpacity: 0.5 // Adjust the fill opacity as needed
+            });
+
+            // Add the marker to the MarkerClusterGroup
+            markersLayer.addLayer(marker);
+
+            marker.on('click', function() {
+                showMarkerInfo(item);
             });
         });
-   
 
-    
-        
+        // Add the MarkerClusterGroup to the map
+        map.addLayer(markersLayer);
     </script>
-    </body>
+</body>
 </html>
