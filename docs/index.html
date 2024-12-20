@@ -40,7 +40,7 @@
 
         function showMarkerInfo(item) {
         // Create content for the popup
-            latlng = [item.latitude, item.longitude];
+            latlng = [item.decimalLatitude, item.decimalLongitude];
             associatedMedia = `https://filedn.eu/lxdSetOgU6G8FNMH4dxBDJQ/coastalDroneMetadataMap/${item.eventID}_image.jpg`;
 
             var popupContent = `
@@ -49,10 +49,9 @@
                 <div class="popup-info-container">
                     <div class="popup-info">
                         <p><strong>Event Date:</strong> ${item.eventDate}</p>
-                        <p><strong>Drone:</strong> ${item.drone}</p>
-                        <p><strong>Resolution (cm/px):</strong> ${item.resolution}</p>
-                        <p><strong>Institution:</strong> ${item.institution}</p>
+                        <p><strong>Institution:</strong> ${item.institutionCode}</p>
                         <p><strong>Contact:</strong> ${item.contact}</p>
+                        <p><strong>Funding:</strong> ${item.funding}</p>
                     </div>
                     <a href="${associatedMedia}" target="_blank">
                         <img src="${associatedMedia}" class="popup-image" />
@@ -71,13 +70,13 @@
     
         // Add polygons
         data.forEach(function(item) {
-            var polygon = L.polygon(item.footprint, {color: 'blue', fillOpacity: 0.1}).addTo(map);
+            var polygon = L.polygon(item.polygon, {color: 'blue', fillOpacity: 0.1}).addTo(map);
             });
 
         // Add markers and store them in an array
         var markers = [];
         data.forEach(function(item) {
-            var marker = L.circleMarker([item.latitude, item.longitude], {
+            var marker = L.circleMarker([item.decimalLatitude, item.decimalLongitude], {
             radius: 4, // Adjust the radius as needed
             color: 'lightblue', // Adjust the color as needed
             fillColor: 'blue', // Adjust the fill color to light blue
