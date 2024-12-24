@@ -1,39 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Coastal Drone Metadata Map</title>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coastal Drone Metadata Map</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
     <script src="data/coastalDroneMetadataMap.js"></script> <!-- External JS with data -->
 </head>
 <body>
+    <!-- Fixed Header -->
     <header>
-        <img src="assets/header.jpg" alt="Header Image" />
         <div class="header-text">Coastal Drone Metadata Map</div>
     </header>
 
+    <!-- Full-screen Image Section -->
+    <div class="hero-section">
+        <img src="assets/instructions.jpg" alt="Hero Image">
+        <div class="overlay">
+            <h1>Collaborative effort to make coastal drone orthomosaics available</h1>
+            <p>Please get in touch if you want to share your metadata</p>
+            <p>Scroll down to explore the map</p>
+        </div>
+    </div>
+
+    <!-- Scrollable Map Section -->
     <div id="map"></div>
-   
-    <!-- Footer section -->
+
+    <!-- Footer Section -->
     <footer>
-        <img src="assets/header.jpg" alt="Footer Image" />
+        <!-- New line of text before logos -->
+        <p class="footer-text">Contributing institutions: </p>
         <div class="logos">
-            <img src="assets/logoUNIOVI.png" alt="Logo 1" class="logo">
-            <img src="assets/logoIEO.png" alt="Logo 2" class="logo">
-            <img src="assets/logoCEAB.png" alt="Logo 3" class="logo">
-            <img src="assets/logoCSIC.png" alt="Logo 4" class="logo">
+            <img src="assets/logoUNIOVI.png" alt="Logo UNIOVI" class="logo">
+            <img src="assets/logoHD.png" alt="Logo Hidden Deserts" class="logo">
+            <img src="assets/logoIEO.png" alt="Logo IEO" class="logo">
+            <img src="assets/logoCEAB.png" alt="Logo CEAB" class="logo">
+            <img src="assets/logoCSIC.png" alt="Logo CSIC" class="logo">
         </div>
     </footer>
-        
+
     <script>
-        // Initialize map
-        var map = L.map('map').setView([40, 2], 6); // Change to your desired coordinates
+        // Initialize the map
+        var map = L.map('map', {
+            scrollWheelZoom: false // Disable scroll zoom initially
+        }).setView([40, 2], 6); // Center the map and set zoom level
 
         // Add tile layer from Carto
         L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
@@ -43,67 +61,67 @@
         // Create a MarkerClusterGroup to hold the markers
         var markersLayer = L.markerClusterGroup();
 
-   function showMarkerInfo(item) {
-    // Create the content for the popup
-    var associatedMedia = `https://filedn.eu/lxdSetOgU6G8FNMH4dxBDJQ/coastalDroneMetadataMap/${item.eventID}_image.jpg`;
-    var latlng = [item.decimalLatitude, item.decimalLongitude];
+        function showMarkerInfo(item) {
+            // Create the content for the popup
+            var associatedMedia = `https://filedn.eu/lxdSetOgU6G8FNMH4dxBDJQ/coastalDroneMetadataMap/${item.eventID}_image.jpg`;
+            var latlng = [item.decimalLatitude, item.decimalLongitude];
 
-    // Create a container element for the popup
-    var popupContent = document.createElement("div");
-    popupContent.className = "popup-content";
+            // Create a container element for the popup
+            var popupContent = document.createElement("div");
+            popupContent.className = "popup-content";
 
-    // Add text content, including the eventID above the image
-    popupContent.innerHTML = `
-        <h3>${item.eventID}</h3>  <!-- Display the eventID as the title -->
-        <div class="popup-info-container">
-            <div class="popup-info">
-                <p><strong>Event Date:</strong> ${item.eventDate}</p>
-                <p><strong>Institution:</strong> ${item.institutionCode}</p>
-                <p><strong>Contact:</strong> ${item.contact}</p>
-                <p><strong>Funding:</strong> ${item.funding}</p>
-            </div>
-            <div class="image-container">
-                <p class="image-title"><strong>Preview:</strong></p>
-                <p class="loading-text">Loading...</p>
-                <a href="${associatedMedia}" target="_blank">
-                    <img src="${associatedMedia}" class="popup-image" style="display: none;" />
-                </a>
-                <p class="click-to-enlarge" style="display: none;">Click to enlarge</p> <!-- Initially hidden -->
-            </div>
-        </div>
-    `;
+            // Add text content, including the eventID above the image
+            popupContent.innerHTML = `
+                <h3>${item.eventID}</h3>  <!-- Display the eventID as the title -->
+                <div class="popup-info-container">
+                    <div class="popup-info">
+                        <p><strong>Event Date:</strong> ${item.eventDate}</p>
+                        <p><strong>Institution:</strong> ${item.institutionCode}</p>
+                        <p><strong>Contact:</strong> ${item.contact}</p>
+                        <p><strong>Funding:</strong> ${item.funding}</p>
+                    </div>
+                    <div class="image-container">
+                        <p class="image-title"><strong>Preview:</strong></p>
+                        <p class="loading-text">Loading...</p>
+                        <a href="${associatedMedia}" target="_blank">
+                            <img src="${associatedMedia}" class="popup-image" style="display: none;" />
+                        </a>
+                        <p class="click-to-enlarge" style="display: none;">Click to enlarge</p> <!-- Initially hidden -->
+                    </div>
+                </div>
+            `;
 
-    // Create the popup and bind it to the map
-    var popup = L.popup()
-        .setLatLng(latlng)
-        .setContent(popupContent)
-        .openOn(map);
+            // Create the popup and bind it to the map
+            var popup = L.popup()
+                .setLatLng(latlng)
+                .setContent(popupContent)
+                .openOn(map);
 
-    // Handle the image load event
-    var image = popupContent.querySelector("img");
-    var loadingText = popupContent.querySelector(".loading-text");
-    var clickToEnlarge = popupContent.querySelector(".click-to-enlarge");
+            // Handle the image load event
+            var image = popupContent.querySelector("img");
+            var loadingText = popupContent.querySelector(".loading-text");
+            var clickToEnlarge = popupContent.querySelector(".click-to-enlarge");
 
-    image.onload = function () {
-        // Once the image is loaded, make it visible, hide the loading message and show the "Click to enlarge"
-        image.style.display = "block";
-        loadingText.style.display = "none";
-        clickToEnlarge.style.display = "block"; // Show the "Click to enlarge" message
+            image.onload = function () {
+                // Once the image is loaded, make it visible, hide the loading message and show the "Click to enlarge"
+                image.style.display = "block";
+                loadingText.style.display = "none";
+                clickToEnlarge.style.display = "block"; // Show the "Click to enlarge" message
 
-        // Reposition the popup to ensure it fits within the map
-        map.invalidateSize();
-        popup.update();
-    };
+                // Reposition the popup to ensure it fits within the map
+                map.invalidateSize();
+                popup.update();
+            };
 
-    // If the image fails to load, handle the error
-    image.onerror = function () {
-        // Replace loading text with an error message
-        loadingText.textContent = "Not available";
-        loadingText.style.display = "block";
-        clickToEnlarge.style.display = "none"; // Don't show "Click to enlarge" if the image is not available
-    };
-}
-    
+            // If the image fails to load, handle the error
+            image.onerror = function () {
+                // Replace loading text with an error message
+                loadingText.textContent = "Not available";
+                loadingText.style.display = "block";
+                clickToEnlarge.style.display = "none"; // Don't show "Click to enlarge" if the image is not available
+            };
+        }
+
         // Add polygons
         data.forEach(function(item) {
             var polygon = L.polygon(item.polygon, {color: 'blue', fillOpacity: 0.1}).addTo(map);
@@ -128,6 +146,29 @@
 
         // Add the MarkerClusterGroup to the map
         map.addLayer(markersLayer);
+
+        // Enable scroll zoom when map is clicked
+        map.on('click', function() {
+            map.scrollWheelZoom.enable(); // Enable scroll zoom
+        });
+
+        // Optionally, you can also disable scroll zoom again if the map loses focus
+        map.on('mouseout', function() {
+            map.scrollWheelZoom.disable(); // Disable scroll zoom when mouse leaves the map
+        });
+    </script>
+
+    <script>
+        function adjustHeroHeight() {
+            const heroSection = document.querySelector('.hero-section');
+            const headerHeight = document.querySelector('header').offsetHeight;
+
+            // Use JavaScript to adjust the height as a fallback
+            heroSection.style.height = `${window.innerHeight - headerHeight}px`;
+        }
+
+        window.addEventListener('load', adjustHeroHeight);
+        window.addEventListener('resize', adjustHeroHeight);
     </script>
 </body>
 </html>

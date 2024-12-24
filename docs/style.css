@@ -1,42 +1,104 @@
-html, body {
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+/* Body and HTML Setup */
+html, body {
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300; /* Normal weight */
+}
+
+/* Header */
 header {
     width: 100%;
-    height:auto;
+    height: 100px; /* Updated header height */
+    background-color: #505050; /* Gray background */
+    color: white;
+    position: fixed; /* Fixed at the top of the screen */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    padding: 0 50px; /* Optional: adds some padding on the left and right */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    font-size: 1.2rem;
+}
+
+/* Align header-text to the left */
+header .header-text {
+    margin: 0; /* Remove default margin */
+    font-size: 2.5rem; /* Adjust the font size as needed */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300; /* Font weight */
+    color: white;
+    text-align: left; /* Align the title text to the left */
+    flex-grow: 1; /* Allow the header text to occupy the remaining space */
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 100px); /* Adjusted for 100px header */
+    margin-top: 100px; /* Adjust for new header height */
     overflow: hidden;
 }
-header img {
-    width: 100%; /* Makes the image full width */
-    max-height: 120px; /* Limits the height to 100px */
-    display: block;
-    height: auto; /* Keeps the aspect ratio */
-    object-fit: cover; 
-    object-position: top;
+
+.hero-section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the section */
 }
 
-.header-text {
-    position: absolute; /* Absolutely position the text */
-    top: 70px; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust position to truly center */
-    color: white; /* Text color */
-    font-size: 1.5em; /* Adjust font size as needed */
-    font-family: 'Arial', sans-serif; /* Change font type */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Add a shadow for better visibility */
-    text-align: center; /* Center text */
-    text-transform: uppercase; /* Make text appear in capital letters */
-    font-weight: bold; /* Make text bold */
+.hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent dark overlay */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*flex-start or center*/
+    justify-content: center;
+    color: white;
+    text-align: left;
+    padding: 50px;
+    box-sizing: border-box; /* Ensure padding does not affect width/height */
+    
 }
 
-.info img {
-    max-height: 40%; /* Subtract the height of header and other elements */
-    width: auto; /* Keep the width auto to maintain aspect ratio */
-    height: auto; /* Keep the height auto to maintain aspect ratio */
+/* Hero Section Title */
+.hero-section .overlay h1 {
+    font-size: 2.2rem; /* Adjust as needed */
+    font-weight: 300;
+    margin: 0;
+    line-height: 3;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Text shadow for better visibility */
 }
 
+/* Hero Section Paragraph */
+.hero-section .overlay p {
+    font-size: 1.5rem; /* Adjust as needed */
+    margin: 0;
+    line-height: 3;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Text shadow for better visibility */
+}
+
+/* Map Section */
+#map {
+    width: 100%;
+    height: calc(100vh - 100px - 80px); /* Adjusted for 100px header */
+}
 .leaflet-popup-content {
     width: 600px !important; /* Set your desired width */
     max-width: 100%; /* Ensure it doesn't exceed the viewport */
@@ -79,46 +141,41 @@ header img {
 }
 
 
-#map {
-    width: 100%;
-    height: calc(100vh - 200px);
-}
-.info {
-    width: 30%;
-    padding: 10px;
-}
-img {
-    max-width: 100%;
-    height: auto;
-}
-
+/* Footer */
 footer {
-    width: 100%;
-    overflow: hidden;
+    background-color: #505050; /* Gray background to match header */
+    color: white;
+    padding: 10px 30px; /* Adjust padding as needed */
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    height: 80px; /* Adjusted footer height */
+    gap: 150px; /* Space between text and logos */
+
+    
+    
+    
+
 }
 
-footer img {
-    width: 100%; /* Makes the image full width */
-    max-height: 80px; /* Limits the height */
-    height: auto; /* Keeps the aspect ratio */
-    object-fit: cover; /* Ensures the image covers the entire area without distortion */
-    object-position: bottom;
+/* Footer Text */
+footer .footer-text {
+    text-align: left; /* Align the text to the left */
+    margin-left: 30px; /* Add space from the left edge of the footer */
+    font-size: 0.7rem; /* Adjust font size as needed */
 }
 
-.logos {
+
+footer .logos {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
-    padding: 10px 0;
-    position: absolute;
-    bottom: 10px; /* Position logos at the bottom of the footer */
-    width: 100%; 
-    z-index: 2; /* Ensure logos appear on top of the background image */
+    gap: 120px; /* Space between logos */
 }
 
-.logo {
+footer .logo {
     max-height: 40px;
     height: auto;
     width: auto;
