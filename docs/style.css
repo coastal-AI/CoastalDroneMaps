@@ -33,7 +33,7 @@ header {
 /* Align header-text to the left */
 header .header-text {
     margin: 0; /* Remove default margin */
-    font-size: 2.5rem; /* Adjust the font size as needed */
+    font-size: 3vw; /* Adjust the font size as needed */
     font-family: 'Roboto', sans-serif;
     font-weight: 300; /* Font weight */
     color: white;
@@ -79,7 +79,7 @@ header .header-text {
 
 /* Hero Section Title */
 .hero-section .overlay h1 {
-    font-size: 2.2rem; /* Adjust as needed */
+    font-size: 2.5vw; /* Adjust as needed */
     font-weight: 300;
     margin: 0;
     line-height: 3;
@@ -88,7 +88,7 @@ header .header-text {
 
 /* Hero Section Paragraph */
 .hero-section .overlay p {
-    font-size: 1.5rem; /* Adjust as needed */
+    font-size: 1.5vw; /* Adjust as needed */
     margin: 0;
     line-height: 3;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Text shadow for better visibility */
@@ -144,39 +144,36 @@ header .header-text {
 /* Footer */
 footer {
     background-color: #505050; /* Gray background to match header */
+    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
     color: white;
     padding: 10px 30px; /* Adjust padding as needed */
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: flex-start;
     box-sizing: border-box;
     height: 80px; /* Adjusted footer height */
-    gap: 150px; /* Space between text and logos */
-
-    
-    
-    
-
 }
+
 
 /* Footer Text */
 footer .footer-text {
     text-align: left; /* Align the text to the left */
     margin-left: 30px; /* Add space from the left edge of the footer */
-    font-size: 0.7rem; /* Adjust font size as needed */
+    font-size: 1vw; /* Adjust font size as needed */
+    margin-right: 100px; /* Add margin to create space between text and logos */
 }
 
 
 footer .logos {
     display: flex;
-    justify-content: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
     align-items: center;
-    gap: 120px; /* Space between logos */
+    gap: 100px; /* Space between logos */
 }
 
 footer .logo {
-    max-height: 40px;
+    max-height: 2.5vw;
     height: auto;
     width: auto;
 }
