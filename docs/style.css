@@ -33,7 +33,8 @@ header {
 /* Align header-text to the left */
 header .header-text {
     margin: 0; /* Remove default margin */
-    font-size: 3vw; /* Adjust the font size as needed */
+    font-size: clamp(2vw, 3.5vw, 3.5vw);
+    white-space: nowrap;
     font-family: 'Roboto', sans-serif;
     font-weight: 300; /* Font weight */
     color: white;
@@ -79,7 +80,9 @@ header .header-text {
 
 /* Hero Section Title */
 .hero-section .overlay h1 {
-    font-size: 2.5vw; /* Adjust as needed */
+    font-size: clamp(1vw, 3vw, 3vw);
+    font-family: 'Roboto', sans-serif;
+    white-space: nowrap;
     font-weight: 300;
     margin: 0;
     line-height: 3;
@@ -88,7 +91,9 @@ header .header-text {
 
 /* Hero Section Paragraph */
 .hero-section .overlay p {
-    font-size: 1.5vw; /* Adjust as needed */
+    font-size: clamp(1vw, 2.5vw, 2.5vw);
+    font-family: 'Roboto', sans-serif;
+    white-space: nowrap;
     margin: 0;
     line-height: 3;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Text shadow for better visibility */
@@ -158,9 +163,10 @@ footer {
 /* Footer Text */
 footer .footer-text {
     text-align: left; /* Align the text to the left */
-    margin-left: 30px; /* Add space from the left edge of the footer */
-    font-size: 1vw; /* Adjust font size as needed */
-    margin-right: 100px; /* Add margin to create space between text and logos */
+    font-family: 'Roboto', sans-serif;
+    margin-left: clamp(1vw, 3vw, 3vw); /* Add space from the left edge of the footer */
+    font-size: clamp(0.7vw, 1vw, 1vw); /* Adjust font size as needed */
+    margin-right: clamp(1vw, 7vw, 7vw); /* Add margin to create space between text and logos */
 }
 
 
@@ -169,11 +175,12 @@ footer .logos {
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: center;
-    gap: 100px; /* Space between logos */
+    gap: clamp(1vw, 7vw, 7vw);
 }
 
 footer .logo {
     max-height: 2.5vw;
+    max-height: clamp(1vw, 3vw, 3vw);
     height: auto;
     width: auto;
 }
