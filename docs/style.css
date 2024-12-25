@@ -33,7 +33,7 @@ header {
 /* Align header-text to the left */
 header .header-text {
     margin: 0; /* Remove default margin */
-    font-size: clamp(2vw, 3vw, 3vw);
+    font-size: clamp(2.5vw, 3vw, 3vw);
     white-space: nowrap;
     font-family: 'Roboto', sans-serif;
     font-weight: 300; /* Font weight */
@@ -80,7 +80,7 @@ header .header-text {
 
 /* Hero Section Title */
 .hero-section .overlay h1 {
-    font-size: clamp(1vw, 2vw, 2vw);
+    font-size: clamp(1.5vw, 2vw, 2vw);
     font-family: 'Roboto', sans-serif;
     white-space: nowrap;
     font-weight: 300;
@@ -91,7 +91,7 @@ header .header-text {
 
 /* Hero Section Paragraph */
 .hero-section .overlay p {
-    font-size: clamp(0.5vw, 1.3vw, 1.3vw);
+    font-size: clamp(1vw, 1.3vw, 1.3vw);
     font-family: 'Roboto', sans-serif;
     white-space: nowrap;
     margin: 0;
