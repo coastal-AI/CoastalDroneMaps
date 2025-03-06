@@ -7,7 +7,7 @@ All metadata and orthomosaic previews are shared under the [CC BY-NC 4.0 license
 
 ## About Us
 
-The Coastal Drone Metadata Map is the result of collaboration between the following research groups:
+The Coastal Drone Metadata Map is the result of collaboration between the following institutions:
 
 - **[Seagrass Ecology Group (GEAM IEO-CSIC)](https://www.ieo.es/es/)**
 - **[Center of Advanced Studies of Blanes (CEAB-CSIC)](https://www.ceab.csic.es)**
