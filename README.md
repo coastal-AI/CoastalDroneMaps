@@ -12,5 +12,6 @@ The Coastal Drone Metadata Map is the result of collaboration between the follow
 - **[Seagrass Ecology Group (GEAM IEO-CSIC)](https://www.ieo.es/es/)**
 - **[Center of Advanced Studies of Blanes (CEAB-CSIC)](https://www.ceab.csic.es)**
 - **[Artificial Intelligence Center (AIC-University of Oviedo)](https://www.aic.uniovi.es)**
+- **[Hidden Deserts](https://hiddendeserts.com)**
 
 
