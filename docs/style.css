@@ -154,10 +154,11 @@ footer {
     padding: 10px 30px; /* Adjust padding as needed */
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     box-sizing: border-box;
     height: 80px; /* Adjusted footer height */
 }
+
 
 
 
