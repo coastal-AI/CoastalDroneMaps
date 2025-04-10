@@ -160,20 +160,12 @@ footer {
 }
 
 
-/* Footer Text */
-footer .footer-text {
-    text-align: left; /* Align the text to the left */
-    font-family: 'Roboto', sans-serif;
-    margin-left: clamp(1vw, 3vw, 3vw); /* Add space from the left edge of the footer */
-    font-size: clamp(0.7vw, 1vw, 1vw); /* Adjust font size as needed */
-    margin-right: clamp(1vw, 7vw, 7vw); /* Add margin to create space between text and logos */
-}
 
 
 footer .logos {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     gap: clamp(1vw, 7vw, 7vw);
 }
