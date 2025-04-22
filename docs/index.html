@@ -43,18 +43,35 @@
     </footer>
 
     <script>
+        // Define tile layers
+        const cartoLight = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="https://carto.com/">CARTO</a>',
+            maxZoom: 20
+        });
+
+        const esriSat = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+            attribution: 'Tiles © Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, etc.',
+            maxZoom: 20
+        });
+
         // Initialize the map
         var map = L.map('map', {
-            scrollWheelZoom: false // Disable scroll zoom initially
-        }).setView([40, 2], 6); // Center the map and set zoom level
+            center: [40, 2], // Center the map
+            zoom: 6, // Initial zoom level
+            layers: [cartoLight], // Default layer
+            scrollWheelZoom: true // Disable scroll zoom initially
+        })
+        // Add layer control
+        const baseMaps = {
+            "Carto Light": cartoLight,
+            "Esri Satellite": esriSat
+        };
+
+        L.control.layers(baseMaps).addTo(map);
+
 
         // Add a scale control to the map
         L.control.scale().addTo(map);
-
-        // Add tile layer from Carto
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
 
         // Create a MarkerClusterGroup to hold the markers
         var markersLayer = L.markerClusterGroup();
