@@ -1,4 +1,4 @@
-# Coastal Drone Metadata Map
+# Coastal Drone Maps
 
 This platform is a joint initiative involving multiple institutions working with drones for coastal habitat mapping. Its primary goal is to provide insights into areas where drone flights have already been conducted, promoting cooperation and preventing duplication of efforts. 
 
