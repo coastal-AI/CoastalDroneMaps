@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coastal Drone Maps Info</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background:url('assets/instructions.jpg') no-repeat center top fixed;
+      background-size: cover;
+      color: #333;
+    }
+
+    .container {
+      width: 80%;
+      margin: auto;
+      overflow: hidden;
+      background: white;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: left;
+    }
+
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div id="markdown">Cargando contenido desde GitHub...</div>
+  </div>
+
+  <script>
+    const rawMarkdownUrl = 'https://raw.githubusercontent.com/coastal-AI/coastalDroneMaps/main/README.md';
+
+    fetch(rawMarkdownUrl)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.text();
+      })
+      .then(markdown => {
+        document.getElementById('markdown').innerHTML = marked.parse(markdown);
+      })
+      .catch(error => {
+        document.getElementById('markdown').innerHTML = 'Error al cargar el README.';
+        console.error('Error fetching markdown:', error);
+      });
+  </script>
+
+</body>
+</html>

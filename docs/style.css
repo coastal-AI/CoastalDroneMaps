@@ -9,100 +9,72 @@
 html, body {
     height: 100%;
     overflow-x: hidden; /* Prevent horizontal scroll */
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300; /* Normal weight */
 }
 
 /* Header */
 header {
     width: 100%;
-    height: 100px; /* Updated header height */
+    height: 130px; /* Updated header height to account for subtitle */
+    display: flex;
+    flex-direction: column; /* Stack header and subtitle vertically */
+    background-image: url('assets/instructions.jpg');
+    background-size: cover;  
     background-color: #505050; /* Gray background */
-    color: white;
     position: fixed; /* Fixed at the top of the screen */
     top: 0;
     left: 0;
     z-index: 1000;
-    display: flex;
-    align-items: center;
-    padding: 0 50px; /* Optional: adds some padding on the left and right */
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 25px 30px;
     font-size: 1.2rem;
 }
 
-/* Align header-text to the left */
-header .header-text {
-    margin: 0; /* Remove default margin */
-    font-size: clamp(2.5vw, 3vw, 3vw);
-    white-space: nowrap;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300; /* Font weight */
-    color: white;
-    text-align: left; /* Align the title text to the left */
-    flex-grow: 1; /* Allow the header text to occupy the remaining space */
-}
-
-/* Hero Section */
-.hero-section {
-    position: relative;
-    width: 100%;
-    height: calc(100vh - 100px); /* Adjusted for 100px header */
-    margin-top: 100px; /* Adjust for new header height */
-    overflow: hidden;
-}
-
-.hero-section img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensures the image covers the section */
-}
-
-.hero-section .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Transparent dark overlay */
+.header-top {
     display: flex;
-    flex-direction: column;
-    align-items: center; /*flex-start or center*/
-    justify-content: center;
+    justify-content: space-between; /* Space out the header content and links */
+    align-items: center; /* Align content vertically in the center */
+    width: 100%;
+}
+
+.header-text {
+    font-size: clamp(30px, 4.5vw, 60px);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     color: white;
-    text-align: left;
-    padding: 50px;
-    box-sizing: border-box; /* Ensure padding does not affect width/height */
-    
 }
 
-/* Hero Section Title */
-.hero-section .overlay h1 {
-    font-size: clamp(1.5vw, 2vw, 2vw);
+.header-links {
+    display: flex;
+    gap: 20px; /* Space between links */
+}
+
+.header-links a {
+    text-decoration: none;
+    color: white;
+    font-size: clamp(12px, 1.2vw, 30px);
+    font-weight: 300; 
+}
+
+.header-links a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Subtitle (under the header text) */
+.subtitle {
+    font-size: clamp(10px, 1.2vw, 30px);
     font-family: 'Roboto', sans-serif;
-    white-space: nowrap;
     font-weight: 300;
-    margin: 0;
-    line-height: 3;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Text shadow for better visibility */
-}
-
-/* Hero Section Paragraph */
-.hero-section .overlay p {
-    font-size: clamp(1vw, 1.3vw, 1.3vw);
-    font-family: 'Roboto', sans-serif;
-    white-space: nowrap;
-    margin: 0;
-    line-height: 3;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Text shadow for better visibility */
+    color: white;
+    font-weight: 300;
+    margin-left: 5px; /* Same margin as header text */
 }
 
 /* Map Section */
 #map {
     width: 100%;
-    height: calc(100vh - 100px - 80px); /* Adjusted for 100px header */
+    height: calc(100vh - 130px - 100px); /* Adjusted for 100px header */
+    margin-top: 130px;
 }
 .leaflet-popup-content {
     width: 600px !important; /* Set your desired width */
@@ -148,19 +120,16 @@ header .header-text {
 
 /* Footer */
 footer {
-    background-color: #505050; /* Gray background to match header */
-    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
-    color: white;
-    padding: 10px 30px; /* Adjust padding as needed */
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    box-sizing: border-box;
-    height: 80px; /* Adjusted footer height */
+    background-image: url('assets/instructions.jpg');
+    overflow: hidden;
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    height: 100px;  /* Set a height */
+    width: 100%;
+    overflow: hidden;
+    position: relative;
 }
-
-
-
 
 
 footer .logos {
@@ -168,12 +137,14 @@ footer .logos {
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+    padding-top: 2.5vh;
     gap: clamp(1vw, 7vw, 7vw);
+    width: 100%;
+
 }
 
 footer .logo {
-    max-height: 2.5vw;
-    max-height: clamp(1vw, 3vw, 3vw);
-    height: auto;
+    height: clamp(30px, 2.5vw, 60px);  /* Standardized height */
     width: auto;
+    object-fit: contain;
 }

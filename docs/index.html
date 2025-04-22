@@ -1,37 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Coastal Drone Maps</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coastal Drone Maps</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
     <link rel="stylesheet" href="style.css" />
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
-    <script src="data/coastalDroneMetadataMap.js"></script> <!-- External JS with data -->
+    <script src="data/coastalDroneMaps.js"></script> <!-- External JS with data -->
 </head>
 <body>
-    <!-- Fixed Header -->
     <header>
-        <div class="header-text">Coastal Drone Maps</div>
+        <div class="header-top">
+            <div class="header-text">Coastal Drone Maps</div>
+            <div class="header-links">
+                <a href="info.html">Info</a>
+                <a href="https://github.com/coastal-AI" target="_blank">
+                    <img src="assets/github.png" alt="GitHub Logo" style="width: 1em; height: 1em;">
+                </a>
+            </div>
+        </div>
+        <div class="subtitle">Collaborative effort to make drone data available</div>
     </header>
 
-    <!-- Full-screen Image Section -->
-    <div class="hero-section">
-        <img src="assets/instructions.jpg" alt="Hero Image">
-        <div class="overlay">
-            <h1>Collaborative effort to make coastal drone orthomosaics available</h1>
-            <p>Please get in touch if you want to share your metadata</p>
-            <p>Scroll down to explore the map</p>
-        </div>
-    </div>
 
-    <!-- Scrollable Map Section -->
     <div id="map"></div>
 
     <!-- Footer Section -->
