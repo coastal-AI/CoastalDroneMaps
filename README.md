@@ -18,3 +18,8 @@ All metadata and orthomosaic previews are shared under the [CC BY-NC 4.0 license
 ## Become a partner
 
 If you wish to collaborate please get in touch at f.garcia@ieo.csic.es.
+
+
+## Contribute
+You can easily contribute by sharing your flight metadata. Just fill in this [Google Form](https://forms.gle/9hEs8SX1BNjMHcET8). Data will be reviewed and uploaded in Coastal Drone Maps as soon as possible.
+
