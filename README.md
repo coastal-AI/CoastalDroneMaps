@@ -1,20 +1,20 @@
 # Coastal Drone Maps
 
-This platform is a joint initiative involving multiple institutions working with drones for coastal habitat mapping. Its primary goal is to provide insights into areas where drone flights have already been conducted, promoting cooperation and preventing duplication of efforts. 
+**Coastal Drone Maps** is a collaborative platform developed by a network of institutions dedicated to mapping coastal habitats using drone technology. Its main objective is to provide clear insights into areas where drone surveys have already been carried out, fostering collaboration, optimizing resources, and minimizing redundant efforts.
 
 ## Viewer
-This collaborative viewer displays information from photogrammetric drone flights, offering users access to flight dates, spatial extents, and other relevant data. Previews of orthomosaics captured during these flights are also available, though the full orthomosaics are not provided here. To request access to the complete orthomosaics, please contact the listed representative.
+This collaborative viewer presents information from photogrammetric drone surveys, allowing users to explore flight dates, spatial coverage, and other relevant metadata. Previews of orthomosaics generated from these flights are available for reference; however, the full-resolution orthomosaics are not publicly accessible through this platform. To request access to orthomosaics, please contact the designated representative.
 
-All metadata and orthomosaic previews are shared under the [CC BY-NC 4.0 license](https://creativecommons.org/licenses/by-nc/4.0/deed.en). Contributing institutions retain the right to determine the terms for sharing the full orthomosaics, including the relevant licensing conditions.
+All metadata and orthomosaic previews are shared under the [CC BY-NC 4.0 license](https://creativecommons.org/licenses/by-nc/4.0/deed.en). Contributing institutions retain full control over access to the complete orthomosaics and may apply their own licensing terms.
 
 
-## About Us
-
-The Coastal Drone Metadata Map is the result of collaboration between the following institutions:
-
+## Partners
 - **[Seagrass Ecology Group (GEAM IEO-CSIC)](https://www.ieo.es/es/)**
 - **[Center of Advanced Studies of Blanes (CEAB-CSIC)](https://www.ceab.csic.es)**
 - **[Artificial Intelligence Center (AIC-University of Oviedo)](https://www.aic.uniovi.es)**
 - **[Hidden Deserts](https://hiddendeserts.com)**
+- **[Agencia de Medio Ambiente y Agua de Andalucía (AMAYA) - Consejería de Sostenibilidad y Medio Ambiente - Junta de Andalucía](https://www.juntadeandalucia.es/organismos/amaya.html)**
 
+## Become a partner
 
+If you wish 
