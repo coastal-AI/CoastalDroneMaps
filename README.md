@@ -17,4 +17,4 @@ All metadata and orthomosaic previews are shared under the [CC BY-NC 4.0 license
 
 ## Become a partner
 
-If you wish 
+If you wish to collaborate please get in touch at f.garcia@ieo.csic.es.
