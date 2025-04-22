@@ -18,4 +18,6 @@ The Coastal Drone Metadata Map is the result of collaboration between the follow
 - **[Hidden Deserts](https://hiddendeserts.com)**
 - **[Agencia de Medio Ambiente y Agua de Andalucía (AMAYA) - Consejería de Sostenibilidad y Medio Ambiente - Junta de Andalucía](https://www.juntadeandalucia.es/organismos/amaya.html)**
 
+## Become a partner
 
+If you wish 
