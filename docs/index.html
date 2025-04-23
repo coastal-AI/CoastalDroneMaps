@@ -43,6 +43,16 @@
     </footer>
 
     <script>
+        function setRealVh() {
+            let vh = window.innerHeight * 0.01;
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
+        }
+    
+        window.addEventListener('resize', setRealVh);
+        window.addEventListener('load', setRealVh);
+    </script>
+
+    <script>
         // Define tile layers
         const cartoLight = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="https://carto.com/">CARTO</a>',

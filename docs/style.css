@@ -73,7 +73,7 @@ header {
 /* Map Section */
 #map {
     width: 100%;
-    height: calc(100vh - 130px - 100px); /* Adjusted for 100px header */
+    height: calc((var(--vh, 1vh) * 100) - 130px - 100px);
     margin-top: 130px;
 }
 .leaflet-popup-content {
@@ -127,24 +127,23 @@ footer {
     background-repeat: no-repeat;
     height: 100px;  /* Set a height */
     width: 100%;
-    overflow: hidden;
     position: relative;
 }
 
 
 footer .logos {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding-top: 2.5vh;
-    gap: clamp(1vw, 7vw, 7vw);
+    gap: 0.5vh clamp(1vw, 5vw, 5vw); /* Less vertical space, responsive horizontal gap */
     width: 100%;
-
+    padding:10px 1vw;
+    box-sizing: border-box;
 }
 
 footer .logo {
-    height: clamp(30px, 2.5vw, 60px);  /* Standardized height */
+    height: clamp(0px, 4vw, 50px);  /* Standardized height */
     width: auto;
     object-fit: contain;
 }
