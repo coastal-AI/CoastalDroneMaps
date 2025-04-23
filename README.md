@@ -21,5 +21,11 @@ If you wish to collaborate please get in touch at f.garcia@ieo.csic.es.
 
 
 ## Contribute
-You can easily contribute by sharing your flight metadata. Just fill in this [Google Form](https://forms.gle/9hEs8SX1BNjMHcET8). Data will be reviewed and uploaded in Coastal Drone Maps as soon as possible.
+You can easily contribute by sharing your flight metadata.  
+  
+**Option 1:** Just fill in this [Google Form](https://forms.gle/9hEs8SX1BNjMHcET8), to upload orthomosaics one by one.   
+**Option 2:** Download the [Excel template](https://github.com/coastal-AI/CoastalDroneMaps/blob/main/docs/data/CoastalDroneMaps.xlsx) and fill in the information of multiple flights. Then send us the excel and orthomosaic previews.  
+**Option 3:** Clone the repository, merge your data in the [json file](https://github.com/coastal-AI/CoastalDroneMaps/blob/main/docs/data/coastalDroneMaps.js) and make a pull request.  
+  
+Data will be reviewed and uploaded in Coastal Drone Maps as soon as possible.
 
