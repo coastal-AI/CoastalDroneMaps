@@ -51,7 +51,7 @@
         document.getElementById('markdown').innerHTML = marked.parse(markdown);
       })
       .catch(error => {
-        document.getElementById('markdown').innerHTML = 'Error al cargar el README.';
+        document.getElementById('markdown').innerHTML = 'Error loading README.';
         console.error('Error fetching markdown:', error);
       });
   </script>
