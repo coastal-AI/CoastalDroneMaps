@@ -1,11 +1,11 @@
 # Coastal Drone Maps
 
-**Coastal Drone Maps** is a collaborative platform developed by a network of institutions dedicated to mapping coastal habitats using drone technology. Its main objective is to provide clear insights into areas where drone surveys have already been carried out, fostering collaboration, optimizing resources, and minimizing redundant efforts.
+**Coastal Drone Maps** is a collaborative platform developed by a network of institutions commited to mapping coastal habitats using drone technology. Its primary goal is to provide clear overview of areas where drone surveys have already been conducted, fostering collaboration, optimizing resources, and minimizing redundant efforts.
 
 ## Viewer
-This collaborative viewer presents information from photogrammetric drone surveys, allowing users to explore flight dates, spatial coverage, and other relevant metadata. Previews of orthomosaics generated from these flights are available for reference; however, the full-resolution orthomosaics are not publicly accessible through this platform. To request access to orthomosaics, please contact the designated representative.
+This collaborative viewer displays metadata from photogrammetric drone surveys of coastal environments. Metadata refers mainly to flight location date and area covered. Where available, low-resolution previews of orthomosaics produced from these flights are provided for reference. Full-resolution orthomosaics are not distributed through this platform.
 
-All metadata and orthomosaic previews are shared under the [CC BY-NC 4.0 license](https://creativecommons.org/licenses/by-nc/4.0/deed.en). Contributing institutions retain full control over access to the complete orthomosaics and may apply their own licensing terms.
+All metadata and orthomosaic previews are shared under the [CC BY-NC 4.0 license](https://creativecommons.org/licenses/by-nc/4.0/deed.en). Contributing institutions retain full ownership and control over the original orthomosaics and may define their own licensing terms. For questions about specific flights or datasets, please contact the respective authors listed in the metadata.
 
 
 ## Partners
